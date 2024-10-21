@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Dantour Single Page
+Template Name: Dantour Single Page Sync
 */
 
 
