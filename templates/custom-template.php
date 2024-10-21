@@ -1,32 +1,12 @@
-<?php
-/**
- * Template Name: Blog Template
- * Description: A custom template to display blog posts.
- */
-get_header();
-?>
+<!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group"><!-- wp:template-part {"slug":"header","theme":"wp-travel-fse","tagName":"header","className":"site-header"} /-->
 
-<h1>Latest Blog Posts</h1>
-
-<?php
-// The Query
-$query = new WP_Query(array('post_type' => 'post', 'posts_per_page' => 5));
-
-// The Loop
-if ($query->have_posts()) {
-    while ($query->have_posts()) {
-        $query->the_post();
-        ?>
-        <h2><?php the_title(); ?></h2>
-        <div><?php the_excerpt(); ?></div>
-        <a href="<?php the_permalink(); ?>">Read More</a>
-        <hr>
-        <?php
-    }
-    wp_reset_postdata(); // Restore original Post Data
-} else {
-    echo '<p>No posts found.</p>';
-}
-
-get_footer();
-?>
+    <!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"0"},"blockGap":"0"}},"layout":{"type":"constrained"}} -->
+    <main class="wp-block-group" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:0"><!-- wp:post-title {"textAlign":"center","align":"wide","style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"var:preset|spacing|60","left":"0"}}},"fontSize":"x-large"} /-->
+    
+    <!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|80"}}},"layout":{"type":"constrained"}} -->
+    <div class="wp-block-group alignwide" style="padding-bottom:var(--wp--preset--spacing--80)"><!-- wp:post-content {"align":"full","layout":{"type":"default"}} /--></div>
+    <!-- /wp:group --></main>
+    <!-- /wp:group -->
+    
+    <!-- wp:template-part {"slug":"footer","theme":"wp-travel-fse","tagName":"footer","className":"site-footer"} /--></div>
