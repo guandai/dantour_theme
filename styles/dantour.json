@@ -166,6 +166,21 @@
 					"fontSize": "var(--wp--preset--font-size--medium)"
 				}
 			},
+			"core/post-title": {
+				"elements": {
+					"link": {
+						":hover": {
+							"typography": {
+								"textDecoration": "underline"
+							}
+						},
+						"typography": {
+							"textDecoration": "none",
+							"fontSize": "var(--wp--preset--font-size--medium)"
+						}
+					}
+				}
+			},
 			"core/button": {
 				"variations": {
 					"outline": {
