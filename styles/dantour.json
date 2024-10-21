@@ -611,6 +611,10 @@
 				"css":"& .wp-block-post-terms__prefix{color: var(--wp--preset--color--contrast-2);}"
 			},
 			"core/post-title": {
+				"typography": {
+						"textDecoration": "none",
+						"fontSize": "var(--wp--preset--font-size--medium)"
+				},
 				"elements": {
 					"link": {
 						":hover": {
