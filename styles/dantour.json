@@ -160,6 +160,12 @@
 	},
 	"styles": {
 		"blocks": {
+			"core/post-excerpt": {
+				"typography": {
+					"lineHeight": "1.6",
+					"fontSize": "var(--wp--preset--font-size--medium)"
+				}
+			},
 			"core/button": {
 				"variations": {
 					"outline": {
@@ -178,9 +184,6 @@
 				}
 			},
 			"core/image": {
-				"filter": {
-					"duotone": "var(--wp--preset--duotone--duotone-2)"
-				}
 			},
 			"core/pullquote": {
 				"typography": {

@@ -586,8 +586,7 @@
 			},
 			"core/post-excerpt": {
 				"typography": {
-					"lineHeight": "1.6",
-					"fontSize": "var(--wp--preset--font-size--small)"
+					"lineHeight": "1.6"
 				}
 			},
 			"core/post-featured-image": {
