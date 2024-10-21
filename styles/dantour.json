@@ -613,7 +613,7 @@
 			"core/post-title": {
 				"typography": {
 						"textDecoration": "none",
-						"fontSize": "var(--wp--preset--font-size--medium)"
+						"fontSize": "1.5em"
 				},
 				"elements": {
 					"link": {
