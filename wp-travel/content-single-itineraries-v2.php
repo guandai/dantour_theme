@@ -23,7 +23,6 @@ global $wp_travel_itinerary;
 ?>
 
 <?php
-echo 111133300;
 do_action( 'wp_travel_before_single_itinerary', get_the_ID() );
 if ( post_password_required() ) {
 	echo get_the_password_form(); //phpcs:ignore

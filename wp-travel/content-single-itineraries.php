@@ -22,7 +22,6 @@ global $wp_travel_itinerary;
 ?>
 <div class="<?php echo esc_attr(  wp_get_theme()->template ) ?>-wptravel-main-content-wrapper" >
 <?php
-echo 111122200;
 do_action( 'wp_travel_before_single_itinerary', get_the_ID() );
 $trip_id = get_the_ID();
 $strings = WpTravel_Helpers_Strings::get();
