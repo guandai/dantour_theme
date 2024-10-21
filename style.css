@@ -13,3 +13,8 @@ Updated: 2024-10-21 08:14:49
 .timeline-contents .tc-heading {
 		width: initial;
 }
+
+.itenary .timeline-contents h2 {
+	 text-align: left;
+	 margin: 12px 10%;
+}
