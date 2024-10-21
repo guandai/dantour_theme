@@ -17,9 +17,9 @@ if ( isset( $wptravel_itineraries ) && ! empty( $wptravel_itineraries ) ) : ?>
 				$wptravel_index = 1;
 				foreach ( $wptravel_itineraries as $wptravel_itinerary ) :
 					if ( 0 === $wptravel_index % 2 ) :
-						$wptravel_first_class  = 'right';
-						$wptravel_second_class = 'left';
-						$wptravel_row_reverse  = 'row-reverse';
+						$wptravel_first_class  = 'left';
+						$wptravel_second_class = 'right';
+						$wptravel_row_reverse  = '';
 					else :
 						$wptravel_first_class  = 'left';
 						$wptravel_second_class = 'right';
