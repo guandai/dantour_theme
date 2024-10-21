@@ -1,4 +1,9 @@
 <?php
+/*
+Template Name: Custom Template3
+*/
+
+
 <!-- wp:template-part {"slug":"header","theme":"twentytwentyfour","area":"header"} /-->
 
 <!-- wp:post-content {"layout":{"inherit":true,"contentSize":"100%"}} /-->
