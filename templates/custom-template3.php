@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Custom Template
+Template Name: Custom Template3
 */
 
 get_header(); // Include the header
