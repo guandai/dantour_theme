@@ -58,7 +58,7 @@ if ( isset( $wptravel_itineraries ) && ! empty( $wptravel_itineraries ) ) : ?>
 								<h3 class="arrival"><?php esc_html_e( 'Date', 'wp-travel' ); ?> : <?php echo esc_html( $wptravel_itinerary_date ); ?></h3>
 							<?php endif; ?>
 							<?php if ( $wptravel_itinerary_time ) : ?>
-								<h3><?php esc_html_e( 'Time', 'wp-travel' ); ?> : <?php echo esc_html( $wptravel_itinerary_time ); ?></h3>
+								<h3 class="title place"><?php esc_html_e( 'Time', 'wp-travel' ); ?> : <?php echo esc_html( $wptravel_itinerary_time ); ?></h3>
 							<?php endif; ?>
 						</div><!-- tc-content -->
 						<div class="tc-content <?php echo esc_attr( $wptravel_second_class ); ?> clearfix" >
