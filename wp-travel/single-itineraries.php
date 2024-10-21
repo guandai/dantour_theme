@@ -15,7 +15,7 @@
  */
 
 if( !wp_is_block_theme() ){
-	get_header( 'itinerary' ); ?>
+	 ?>
 	<?php 
 	do_action( 'wp_travel_before_main_content' ); 
 	?>
