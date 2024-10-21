@@ -42,7 +42,6 @@ if ( isset( $wptravel_itineraries ) && ! empty( $wptravel_itineraries ) ) : ?>
 						$wptravel_itinerary_desc = stripslashes( $wptravel_itinerary['desc'] );
 					}
 					if ( isset( $wptravel_itinerary['date'] ) && '' !== $wptravel_itinerary['date'] && 'invalid date' !== strtolower( $wptravel_itinerary['date'] ) ) {
-						echo(esc_html( $wptravel_itinerary_date ));
 						$wptravel_itinerary_date = wptravel_format_date( $wptravel_itinerary['date'] );
 					}
 					if ( isset( $wptravel_itinerary['time'] ) && '' !== $wptravel_itinerary['time'] ) {
@@ -55,6 +54,8 @@ if ( isset( $wptravel_itineraries ) && ! empty( $wptravel_itineraries ) ) : ?>
 							<?php if ( '' !== $wptravel_itinerary_label ) : ?>
 							<h4><?php echo esc_html( $wptravel_itinerary_label ); ?></h4>
 							<?php endif; ?>
+							echo(111);
+							echo(esc_html( $wptravel_itinerary_date ));
 							<?php if ( $wptravel_itinerary_date ) : ?>
 								<h3 class="arrival"><?php esc_html_e( 'Date', 'wp-travel' ); ?> : <?php echo esc_html( $wptravel_itinerary_date ); ?></h3>
 							<?php endif; ?>
