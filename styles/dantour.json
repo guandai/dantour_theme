@@ -619,7 +619,8 @@
 							}
 						},
 						"typography": {
-							"textDecoration": "none"
+							"textDecoration": "none",
+							"fontSize": "var(--wp--preset--font-size--medium)"
 						}
 					}
 				}
