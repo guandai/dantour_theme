@@ -114,7 +114,10 @@ if( !wp_is_block_theme() ){
 			<?php wp_body_open(); ?>
 			<div class="wp-site-blocks">
 				<header class="wp-block-template-part">
-					<?php echo wp_kses_post( $block_header ); ?>
+					<?php 
+					  echo $block_header;
+					  //echo wp_kses_post( $block_header ); 
+					?>
 				</header>
 				<main class="wptravel-content-wrapper is-layout-constrained" style="display:flex; padding: 60px 20px 80px 20px;">
 				<div class="wp-block-group archive alignwide">
@@ -144,7 +147,10 @@ if( !wp_is_block_theme() ){
 				</div>
 				</main>
 				<footer class="wp-block-template-part site-footer">
-					<?php echo wp_kses_post( $block_footer ); ?>
+					<?php 
+					  echo $block_footer;
+					  //echo wp_kses_post( $block_footer ); 
+					?>
 				</footer>
 			</div>
 			<?php wp_footer(); ?>
