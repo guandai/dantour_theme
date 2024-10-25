@@ -1,5 +1,5 @@
 <?php
-function custom_wptravel_single_excerptcustom_wptravel_single_excerpt( $trip_id ) {
+function custom_wptravel_single_excerpt( $trip_id ) {
 	if ( ! $trip_id ) {
 		return;
 	}

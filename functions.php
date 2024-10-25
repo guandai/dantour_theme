@@ -26,5 +26,9 @@ add_action( 'wp_enqueue_scripts', 'child_theme_configurator_css', 10 );
 // END ENQUEUE PARENT ACTION
 
 
-remove_action( 'wp_travel_single_trip_after_title', 'wptravel_single_excerpt', 1 );
-add_action( 'wp_travel_single_trip_after_title', 'custom_wptravel_single_excerpt', 1 );
+// add_action ('init', 'overwrite_wptravel_single_excerpt', 15);
+// function overwrite_wptravel_single_excerpt(){
+    remove_action( 'wp_travel_single_trip_after_title', 'wptravel_single_excerpt', 1 );
+    add_action( 'wp_travel_single_trip_after_title', 'custom_wptravel_single_excerpt', 10 );
+
+// }
