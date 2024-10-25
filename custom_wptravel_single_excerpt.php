@@ -135,6 +135,7 @@ function custom_wptravel_single_excerpt( $trip_id ) {
 				<a href="<?php echo esc_url( $custom_link ); ?>" target="<?php echo $open_in_new_tab ? esc_attr( 'new' ) : ''; ?>" class="wptravel-book-your-trip"><?php echo esc_html( apply_filters( 'wp_travel_template_book_now_text', $book_now_text ) ); // @phpcs:ignore ?></a>
 				<?php
 			elseif ( wptravel_tab_show_in_menu( 'booking' ) || $enable_one_page ) :
+				echo 11111;
 				if ( $enable_one_page == true && $hook_for_double_enable == true ) {
 				?>
 				<div id='wp-travel-one-page-checkout-enables'><?php __('Book Now', 'wp-travel' ); ?></div>
