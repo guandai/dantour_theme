@@ -129,10 +129,10 @@ function custom_wptravel_single_excerpt( $trip_id ) {
 			if ( wp_travel_add_to_cart_system() ) {
 				$book_now_text = isset( $strings['set_add_to_cart'] ) ? $strings['set_add_to_cart'] : __( 'Add to Cart', 'wp-travel' );
 			}
+			$book_now_text = 'AAAAA';
 			if ( 'custom-booking' === $pricing_type && 'custom-link' === $booking_type && $custom_link ) :
 				?>
 				<a href="<?php echo esc_url( $custom_link ); ?>" target="<?php echo $open_in_new_tab ? esc_attr( 'new' ) : ''; ?>" class="wptravel-book-your-trip"><?php echo esc_html( apply_filters( 'wp_travel_template_book_now_text', $book_now_text ) ); // @phpcs:ignore ?></a>
-aaaddd
 				<?php
 			elseif ( wptravel_tab_show_in_menu( 'booking' ) || $enable_one_page ) :
 				if ( $enable_one_page == true && $hook_for_double_enable == true ) {
