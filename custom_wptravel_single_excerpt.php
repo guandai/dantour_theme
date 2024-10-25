@@ -22,7 +22,7 @@ function custom_wptravel_single_excerpt( $trip_id ) {
 	} else {
 		$enable_enquiry = get_post_meta( $trip_id, 'wp_travel_enable_trip_enquiry_option', true );
 	}
-
+	
 	// Strings.
 	$trip_type_text  = isset( $strings['trip_type'] ) ? $strings['trip_type'] : __( 'Trip Type', 'wp-travel' );
 	$activities_text = isset( $strings['activities'] ) ? $strings['activities'] : __( 'Activities', 'wp-travel' );
@@ -31,7 +31,7 @@ function custom_wptravel_single_excerpt( $trip_id ) {
 	$max_pax_text        = isset( $strings['bookings']['max_pax'] ) ? $strings['bookings']['max_pax'] : __( ' Max', 'wp-travel' );
 	$pax_text        = isset( $strings['bookings']['pax'] ) ? $strings['bookings']['pax'] : __( 'Pax', 'wp-travel' );
 	$reviews_text    = isset( $strings['reviews'] ) ? $strings['reviews'] : __( 'Reviews', 'wp-travel' );
-
+	
 	$empty_trip_type_text  = isset( $strings['empty_results']['trip_type'] ) ? $strings['empty_results']['trip_type'] : __( 'No Trip Type', 'wp-travel' );
 	$empty_activities_text = isset( $strings['empty_results']['activities'] ) ? $strings['empty_results']['activities'] : __( 'No Activities', 'wp-travel' );
 	$empty_group_size_text = isset( $strings['empty_results']['group_size'] ) ? $strings['empty_results']['group_size'] : __( 'No Size Limit', 'wp-travel' );
@@ -129,18 +129,24 @@ function custom_wptravel_single_excerpt( $trip_id ) {
 			if ( wp_travel_add_to_cart_system() ) {
 				$book_now_text = isset( $strings['set_add_to_cart'] ) ? $strings['set_add_to_cart'] : __( 'Add to Cart', 'wp-travel' );
 			}
-			$book_now_text = 'AAAAA';
 			if ( 'custom-booking' === $pricing_type && 'custom-link' === $booking_type && $custom_link ) :
 				?>
 				<a href="<?php echo esc_url( $custom_link ); ?>" target="<?php echo $open_in_new_tab ? esc_attr( 'new' ) : ''; ?>" class="wptravel-book-your-trip"><?php echo esc_html( apply_filters( 'wp_travel_template_book_now_text', $book_now_text ) ); // @phpcs:ignore ?></a>
 				<?php
 			elseif ( wptravel_tab_show_in_menu( 'booking' ) || $enable_one_page ) :
-				echo 11111;
-				if ( $enable_one_page == true && $hook_for_double_enable == true ) {
+				$trip_price = get_post_meta( $trip_id, 'wp_travel_trip_price', true );
+				$start_date = get_post_meta( $trip_id, 'wp_travel_trip_duration_start_date', true );
+				$valid_trip_price = (is_numeric($trip_price) && $trip_price >= 0);
+				$date_yhz = DateTime::createFromFormat('Y-m-d\TH:i:s.u\Z', $start_date);
+    		$valid_start_yhz = ($date_yhz && $date_yhz->format('Y-m-d\TH:i:s.000\Z') === $start_date);
+				$valid_double_enable = $hook_for_double_enable == true;
+				$valid_enable_one = $enable_one_page == true;
+
+				if ( $valid_trip_price && $valid_start_yhz && $valid_double_enable && $valid_enable_one ) {
 				?>
 				<div id='wp-travel-one-page-checkout-enables'><?php __('Book Now', 'wp-travel' ); ?></div>
 				<?php } else { ?>
-				<button class="wptravel-book-your-trip wp-travel-booknow-btn"><?php echo esc_html( apply_filters( 'wp_travel_template_book_now_text', $book_now_text ) ); // @phpcs:ignore ?></button>
+				<!-- <button class="wptravel-book-your-trip wp-travel-booknow-btn"><?php echo esc_html( apply_filters( 'wp_travel_template_book_now_text', $book_now_text ) ); // @phpcs:ignore ?></button> -->
 			<?php } endif;
 			if ( 'yes' === $enable_enquiry ) : ?>
 				<a id="wp-travel-send-enquiries" class="wp-travel-send-enquiries" data-effect="mfp-move-from-top" href="#wp-travel-enquiries">
