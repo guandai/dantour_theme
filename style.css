@@ -38,6 +38,9 @@ Updated: 2024-10-21 08:14:49
 
 
 
+/* ************* */
+
+
 
 
 /* social login css start */
@@ -100,3 +103,479 @@ input#user_login{
 
 
 
+/* ************* */
+
+
+
+/* WP Travel Checkout css */
+.entry-content.wp-block-post-content.wp-block-post-content-is-layout-constrained 
+.wp-travel {
+	min-height: 400px;
+	align-content: center;
+	text-align: center;
+	max-width: 1200px;
+}
+
+
+.wp-block-group.has-global-padding h1.has-text-align-center.wp-block-post-title {
+	font-size: 24x;
+}
+/* WP Travel Checkout css end */
+
+
+
+/* ************* */
+
+
+
+/* home page css */
+/*  not used 
+ * .header_video {
+	width: 100%;
+	top: 0;
+	position: absolute;
+
+	.header_video iframe {
+		min-height: 900px;
+		max-height: 900px;
+	}
+
+	.text_on_slider {
+		padding-top: 300px;
+		padding-bottom: 300px;
+	}
+
+	#text_on_slider .wptravel-block-wrapper.wptravel-block-trip-search .wp-travel-search form {
+		display: flex;
+	}
+
+}
+ */
+#wptravel-block-trip-search {
+	margin-top: 5em;
+}
+
+#wptravel-block-trip-search select,
+#wptravel-block-trip-search input {
+	border-radius: 24px !important;
+}
+
+.wp-site-blocks .entry-content {
+	margin-block-start: 0;
+}
+
+#search_trip_bar {
+   position: relative;
+	z-index: 15;
+}
+
+#search_trip_bar,
+#text_on_slider {
+	text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+
+#search_trip_bar .wptravel-block-trip-search > .wp-travel-search,
+#text_on_slider .wptravel-block-trip-search > .wp-travel-search {
+    border: 1px solid grey;
+    padding: 16px;
+    color: white;
+    border-radius: 15px;
+    background-color: rgb(155, 155, 155, 0.3);
+}
+
+@media (max-width: 480px) {
+    .mobile_narrow .wp-block-column.icon_column {
+        flex-basis: 40% !important;
+        text-align: center;
+    }
+
+    .mobile_narrow #evbBackground-10 {
+        min-height: initial;
+    }
+
+    .mobile_narrow #evbBackground-10 .backgroundContentWrapper {
+        background: none;
+        padding: 0;
+    }
+
+
+    .mobile_narrow #evbBackground-10 .evbBackground {
+        display: none;
+    }
+
+    .mobile_narrow .product_grid {
+        gap: 4px;
+        font-size: 12px;
+    }
+
+    .mobile_narrow .wp-block-heading  {
+        margin: 12px 0;
+    }
+
+    .mobile_narrow .wp-block-column.icon_column p {
+        margin: 0;
+    }
+
+    #vehicle-spacer {
+        display: none;
+    }
+}
+
+/* home page css end */
+
+
+
+
+/* ************* */
+
+
+
+/* form extend book CSS */
+/* Style the labels as tabs */
+#book-big-type ,
+#book-type {
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+    flex-wrap: nowrap;
+	margin-bottom: -1px;
+}
+
+.wpcf7-form-control-wrap {
+  display: flex;
+  gap: 4px; /* Add some spacing between buttons */
+}
+
+#book-big-type label {
+  padding: 8px 12px;
+  background-color: #0073e6;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  border: 2px solid transparent;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+#book-big-type label:hover {
+  background-color: #005bb5;
+}
+
+#book-big-type label input[type="radio"] {
+  display: none;
+}
+
+
+#book-big-type label.active,
+#book-big-type label input.active {
+  background-color: #0e569d;
+  border-color: #0e569d; 
+}
+#book-big-type span.wpcf7-list-item {
+	margin-left: 0.7em;
+}
+
+#book-type span.wpcf7-list-item {
+	margin-left: 0.5em;
+}
+#book-type span.wpcf7-list-item input {
+	display: none;
+}
+#book-type label {
+	display: inline-block;
+    position: relative;
+    padding: 8px 8px;
+    margin-right: 5px;
+    background-color: #f0f0f0;
+	border: 1px solid #a0a0a0;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+	border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+#book-type label.active {
+	border-bottom: 0;
+}
+
+#book-type label:hover {
+    background-color: #e0e0e0;
+}
+
+/* Style for active tab when a radio is checked */
+#book-type label.active,
+#book-type label input.active {
+    background-color: #d3e9ff;
+}
+
+
+#book-type label::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background-color: transparent;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+/* Remove margin from the last tab */
+#book-type label {
+    margin-right: 0;
+}
+#book-type-tabs {
+	border: 1px solid #a0a0a0;
+	border-radius: 12px;
+	background-color: #ffffff;
+}
+
+div[data-id="book-detail-1"] .contact-form_select-wrapper {
+	padding-bottom: 0px;
+}
+
+/* form extend book CSS end */
+
+
+
+/* ************* */
+
+
+
+/* form css base */
+
+.section h2,
+.contact-form h2 {
+  margin-top: 2em;
+}
+
+
+input[type='submit'] {
+    font-size: 18px;
+    margin-left: 20px;
+	margin-top: 2em;
+	padding: 10px 20px;
+	background-color: #0073e6;
+	color: white;
+	border-radius: 5px;
+	cursor: pointer;
+	display: inline-block;
+	border: 2px solid transparent;
+	transition: background-color 0.3s, border-color 0.3s;
+}
+
+.wp-block-column input,
+.contact-form .wrapper textarea,
+.contact-form .wrapper select,
+.contact-form .wrapper input {
+	width: 100%;
+    border-radius: 12px;
+    font-size: 16px;
+    padding: 8px;
+	border: 1px solid #888888;
+}
+
+
+.contact-form .wrapper input[type="radio"],
+.contact-form .wrapper input[type="checkbox"] {
+		width: fit-content;
+}
+
+.section .wrapper,
+.contact-form .wrapper {
+    flex: 1;
+  	padding: 12px;
+}
+
+.section label,
+.contact-form label {
+    margin-top: 12px;
+  	font-weight: bold;
+}
+
+
+.row-group {
+	display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+
+input[type="file" i]::-webkit-file-upload-button  {
+    font-size: 20px;
+    padding: 12px;
+    border-radius: 12px;
+    margin-right: 8px;
+}
+
+#file-plan {
+    font-size: 20px;
+}
+
+.wp-block-column {
+	padding: 1em;
+}
+
+/* Modal styles */
+.modal {
+  display: none; /* Hidden by default */
+  border: 1px solid #888888;
+  position: fixed; 
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 300px;
+  height: 150px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+}
+
+.modal-content {
+  margin-top: 20px;
+}
+
+
+/* form css base  end*/
+
+
+
+/* ************* */
+
+
+
+/* global css header title */
+
+html {
+	scroll-behavior: smooth;
+}
+
+.account-menu ul.wp-block-navigation__submenu-container.wp-block-navigation-submenu {
+	padding: 2px;
+	border-radius: 8px;
+	left: 0px;
+	min-width: 100px !important;
+}
+
+.wp-block-navigation li.menu_user_profile ul.wp-block-navigation__submenu-container {
+    z-index: 20;
+}
+
+a.wp-block-navigation-item__content {
+	padding: 0.2em 0.5em;
+}
+
+.wp-block-navigation__container:only-child {
+  gap: 4px;
+}
+
+header .wp-block-search__inside-wrapper input {
+	margin-right: 12px;
+}
+
+.header_picture img {
+	min-height: 600px;
+	max-height: 600px;
+	border-radius: 0;
+}
+
+.header_title_stack  {
+    font-size: 2em;
+    font-weight: bold;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideIn 1.5s forwards;
+    animation-delay: 0.5s;
+    position: absolute;
+    top: 30%;
+    left: 24%;
+    white-space: nowrap;
+    color: #fff;
+    width: 65%;
+    text-wrap: wrap;
+    text-align: left;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+:where(.wp-site-blocks) > figure.wp-block-post-featured-image {
+    margin-block-start: 0;
+}
+
+.wp-block-search.wp-block-search__button-only .wp-block-search__button {
+	margin-left: 8px;
+}
+
+@media (max-width: 480px) {
+	.wc-blocks-pattern-header-essential .wp-block-group p {
+		font-size: 8px;
+	}
+	.wc-blocks-pattern-header-essential form.wp-block-search__button-only.wp-block-search__icon-button.wp-block-search .wp-block-search__inside-wrapper {
+		width: 170px !important;
+	}
+	.wc-blocks-pattern-header-essential .wp-block-search__button svg {
+		height: 0.8em;
+		min-height: initial;
+		min-width: 14px;
+		width: 0.8em;
+	}
+
+	.wc-blocks-pattern-header-essential button.wp-block-search__button.wp-element-button {
+		padding: 12px;
+	}
+	
+    .wp-block-group.wc-blocks-pattern-header-essential {
+        padding: 0 10px !important;
+    }
+
+    .wc-blocks-pattern-header-essential .wp-block-group.is-layout-flex.wp-block-group-is-layout-flex {
+        gap: 0;
+        font-size: 10px;
+        
+    }
+	
+	.wc-blocks-pattern-header-essential  .wp-block-group.is-layout-flex.wp-block-group-is-layout-flex p {
+        width: 60px;
+    }
+
+    button.wp-block-search__button.has-icon.wp-element-button {
+        padding: 8px;
+    }
+
+    form.wp-block-search__icon-button.wp-block-search .wp-block-search__inside-wrapper {
+        width: 155px !important;
+        margin-left: 10px;
+    }
+}
+
+
+/* global css header title end */
+
+
+
+
+/* ************* */
+
+
+
+/* wp-admin css fix */
+.editor-sidebar__panel.components-panel .jetpack-ai-post-excerpt .components-base-control {
+	width: 100%;
+}
+/* wp-admin css fix end */
