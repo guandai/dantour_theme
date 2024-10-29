@@ -244,7 +244,8 @@ input#user_login{
 
 .wpcf7-form-control-wrap {
   display: flex;
-  gap: 4px; /* Add some spacing between buttons */
+  gap: 4px;
+	justify-content: center;
 }
 
 #book-big-type label {
