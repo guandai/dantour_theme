@@ -67,7 +67,7 @@ if ( isset( $wptravel_itineraries ) && ! empty( $wptravel_itineraries ) ) : ?>
 							<?php endif; ?>
 							<?php do_action( 'wp_travel_itineraries_after_title', $wptravel_itinerary ); ?>
 							<?php echo wp_kses_post( wpautop( $wptravel_itinerary_desc ) ); ?>
-							<div class="image"></div>
+							<div class="image wptravel_index_<?php echo $wptravel_index; ?>"></div>
 						</div><!-- tc-content -->
 					</div><!-- first-content -->
 					<?php $wptravel_index++; ?>
