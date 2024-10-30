@@ -8,6 +8,11 @@ Description: Dantour Twenty Twenty-Four is designed to be a travel agency.
 Version: 1.2.1729491289
 Updated: 2024-10-21 08:14:49
 */
+
+.col.clearfix.wptravel_index_last {
+    border: 2px solid transparent;
+}
+
 h2.resp-accordion {
     font-size: 22px;
 }
@@ -25,7 +30,7 @@ h2.resp-accordion {
 }
 
 #trip_outline .wptravel_index_last .tc-content.right {
-    border: 0;
+    border: 2px solid transparent;
     margin: -24px 0 0 91px;
 }
 
