@@ -65,10 +65,14 @@ if ( isset( $wptravel_itineraries ) && ! empty( $wptravel_itineraries ) ) : ?>
 							<?php 
 								echo esc_attr( $wptravel_second_class ); 
 								echo ' wptravel_index_' . $wptravel_index;
-								echo ' ';
-								echo (count( $wptravel_itineraries )+1 == $wptravel_index );
-								echo ' ';
-								if ( count( $wptravel_itineraries )+1 == $wptravel_index ) {
+								echo ' count+1 ';
+								echo (count( $wptravel_itineraries )+1 );
+								echo ' wptravel_index: ';
+								echo ($wptravel_index );
+								echo ' test== ';
+								echo (count( $wptravel_itineraries ) == $wptravel_index-1 );
+								echo ' echo ';
+								if ( count( $wptravel_itineraries ) == $wptravel_index-1 ) {
 									echo ' wptravel_index_last';
 								}
 							?>
@@ -90,15 +94,12 @@ if ( isset( $wptravel_itineraries ) && ! empty( $wptravel_itineraries ) ) : ?>
 					<?php foreach ( $wptravel_itineraries as $k => $wptravel_itinerary ) : ?>
 						<div class="panel panel-default">
 							<div class="panel-heading">
-							
 								<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse-itinerary<?php echo esc_attr( $k + 1 ); ?>">
 									<h4 class="panel-title">
 										<Span><?php echo esc_html( $wptravel_itinerary['label'] ) . ' : ' . esc_html( $wptravel_itinerary['title'] ); ?></span>
 										<span class="collapse-icon"></span>
 									</h4>
-								
 								</a>
-							
 							</div>
 							<div id="collapse-itinerary<?php echo esc_attr( $k + 1 ); ?>" class="panel-collapse collapse">
 							<div class="panel-body">
