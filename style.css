@@ -9,6 +9,10 @@ Version: 1.2.1729491289
 Updated: 2024-10-21 08:14:49
 */
 
+div#trip_outline {
+    padding: 18px 50px;
+}
+
 .wptravel-layout-v2 .wptravel-archive-wrapper .view-box .view-image .offer{
     background-color: #0073e6;
 }
@@ -28,7 +32,7 @@ h2.resp-accordion {
 
 #trip_outline .timeline-contents .tc-content {
     padding: 34px 0px 20px 34px;
-    width: calc(100% - 98px - 2px);
+    width: 100%;
 }
 
 #trip_outline .timeline-contents .tc-content p {
@@ -57,7 +61,7 @@ h2.resp-accordion {
     width: 88px;
     padding: 0px 0px;
     position: absolute;
-    left: 54px;
+    left: 84px;
 }
 
 .itenary .timeline-contents h2 {
@@ -139,6 +143,10 @@ h2.resp-accordion {
     #trip_outline .wptravel_index_last .tc-content.right {
         margin: 0;
         margin-top: 34px;
+    }
+
+    div#trip_outline {
+        padding: 18px 12px;
     }
 }
 /* ************* */
