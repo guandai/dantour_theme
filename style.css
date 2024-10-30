@@ -27,7 +27,7 @@ h2.resp-accordion {
 }
 
 #trip_outline .timeline-contents .tc-content {
-    padding: 30px 0px 20px 34px;
+    padding: 34px 0px 20px 34px;
     width: calc(100% - 98px - 2px);
 }
 
@@ -44,17 +44,20 @@ h2.resp-accordion {
 }
 
 .timeline-contents .tc-heading h4 {
-    font-size: 18px;
-    width: initial;
-    padding: 2px 20px 0 7px;
+    font-size: 14px;
+    width: fit-content;
+    padding: 4px 8px;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    border-radius: 12px;
+    background: blue;
+    color: white;
 }
 
 .timeline-contents .tc-heading {
     width: 88px;
     padding: 0px 0px;
     position: absolute;
-    left: 50px;
+    left: 54px;
 }
 
 .itenary .timeline-contents h2 {
