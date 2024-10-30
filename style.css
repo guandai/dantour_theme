@@ -590,7 +590,7 @@ header .wp-block-search__inside-wrapper input {
 	margin-left: 8px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
 	.wc-blocks-pattern-header-essential .wp-block-group p {
 		font-size: 8px;
 	}
