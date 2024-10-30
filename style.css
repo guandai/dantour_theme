@@ -9,6 +9,11 @@ Version: 1.2.1729491289
 Updated: 2024-10-21 08:14:49
 */
 
+.timeline-contents .tc-content .image:first-of-type {
+    background-color: blue;
+}
+
+
 #trip_outline .timeline-contents .tc-content{
     padding: 0 34px 20px 34px;
     width: 840px;
