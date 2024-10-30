@@ -21,7 +21,7 @@ Updated: 2024-10-21 08:14:49
     border-radius: 12px;
 }
 
-#trip_outline .timeline-contents .tc-content.right.wptravel_index_last {
+#trip_outline .timeline-contents .wptravel_index_last .tc-content.right {
     border: 0;
     margin: -24px 0 0 91px;
 }
@@ -86,11 +86,11 @@ Updated: 2024-10-21 08:14:49
 }
 
 
-.itenary .timeline-contents .tc-content .image.wptravel_index_1 {
+.itenary .timeline-contents .wptravel_index_1 .tc-content .image {
     background-color: #ff7900;
 }
 
-.itenary .timeline-contents .tc-content.wptravel_index_last .image {
+.itenary .timeline-contents .wptravel_index_last .tc-content .image {
     background-color: #3385ff;
 }
 
