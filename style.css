@@ -73,8 +73,12 @@ Updated: 2024-10-21 08:14:49
     border: 2px solid blue;
     height: 200px;
     width: 300px;
-  }
+}
 
+
+.itenary .timeline-contents .tc-content .image.wptravel_index_1 {
+    background-color: #ff7900;
+}
 
 /* ************* */
 
