@@ -64,7 +64,13 @@ if ( isset( $wptravel_itineraries ) && ! empty( $wptravel_itineraries ) ) : ?>
 						<div class="tc-content clearfix 
 							<?php 
 								echo esc_attr( $wptravel_second_class ); 
+								echo ' ';
 								echo 'wptravel_index_' . $wptravel_index;
+								echo ' ';
+								echo count( $wptravel_itineraries );
+								echo ' ';
+								echo $wptravel_index;
+								echo ' ';
 								if ( count( $wptravel_itineraries )+1 === $wptravel_index ) {
 									echo ' wptravel_index_last';
 								}
