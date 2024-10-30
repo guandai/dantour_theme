@@ -14,6 +14,10 @@ Updated: 2024-10-21 08:14:49
     width: 840px;
 }
 
+#trip_outline .timeline-contents .tc-content.right.wptravel_index_last {
+    border: 0;
+}
+
 .timeline-contents .tc-heading h4 {
     font-size: 18px;
     width: initial;
