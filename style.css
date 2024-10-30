@@ -122,6 +122,7 @@ h2.resp-accordion {
     .timeline-contents .tc-heading {
         width: 98px;
         padding: 0 0 19px 20px;
+        left: 12px;
     }
 
     #trip_outline .timeline-contents .tc-content {
@@ -137,6 +138,7 @@ h2.resp-accordion {
 
     #trip_outline .wptravel_index_last .tc-content.right {
         margin: 0;
+        margin-top: 34px;
     }
 }
 /* ************* */
