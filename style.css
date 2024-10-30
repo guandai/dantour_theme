@@ -10,7 +10,7 @@ Updated: 2024-10-21 08:14:49
 */
 
 #trip_outline .timeline-contents .tc-content{
-    padding: 20px 34px;
+    padding: 0 34px 20px 34px;
     width: 840px;
 }
 
@@ -26,8 +26,9 @@ Updated: 2024-10-21 08:14:49
 }
 
 .itenary .timeline-contents h2 {
-	 text-align: left;
-	 margin: 12px 0px;
+	 /* text-align: left;
+	 margin: 12px 0px; */
+     display: none;
 }
 
 
