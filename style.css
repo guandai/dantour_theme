@@ -9,6 +9,9 @@ Version: 1.2.1729491289
 Updated: 2024-10-21 08:14:49
 */
 
+.wptravel-layout-v2 .wptravel-archive-wrapper .view-box .view-image .offer{
+ background-color: #0073e6;
+}
 .wp-travel-related-posts.wp-travel-container-wrap h2 {
     font-size: 22px;
     text-align: center;
@@ -95,14 +98,14 @@ h2.resp-accordion {
 } */
 .col .tc-content .image:first-child {
     /* Styles for the first .image element */
-    border: 2px solid blue;
+    border: 2px solid #0073e6;
     height: 200px;
     width: 300px;
 }
 
 
 .itenary .timeline-contents .wptravel_index_1 .tc-content .image {
-    background-color: #ff7900;
+    background-color: #0073e6;
 }
 
 .itenary .timeline-contents .wptravel_index_last .tc-content .image {
