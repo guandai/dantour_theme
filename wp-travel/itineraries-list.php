@@ -49,7 +49,13 @@ if ( isset( $wptravel_itineraries ) && ! empty( $wptravel_itineraries ) ) : ?>
 						$wptravel_itinerary_time = date( $wptravel_time_format, strtotime( $wptravel_itinerary_time ) ); // @phpcs:ignore
 					}
 					?>
-					<div class="col clearfix <?php echo esc_attr( $wptravel_row_reverse ); ?>">
+					<div class="col clearfix <?php 
+						echo esc_attr( $wptravel_row_reverse ); 
+						echo ' wptravel_index_' . $wptravel_index;
+						if ( count( $wptravel_itineraries ) == $wptravel_index ) {
+							echo ' wptravel_index_last';
+						}
+					?>">
 						<div class="tc-heading <?php echo esc_attr( $wptravel_first_class ); ?> clearfix">
 							<?php if ( '' !== $wptravel_itinerary_label ) : ?>
 							<h4><?php echo esc_html( $wptravel_itinerary_label ); ?></h4>
@@ -61,15 +67,7 @@ if ( isset( $wptravel_itineraries ) && ! empty( $wptravel_itineraries ) ) : ?>
 								<h3 class="title place"><?php esc_html_e( 'Time', 'wp-travel' ); ?> : <?php echo esc_html( $wptravel_itinerary_time ); ?></h3>
 							<?php endif; ?>
 						</div><!-- tc-content -->
-						<div class="tc-content clearfix 
-							<?php 
-								echo esc_attr( $wptravel_second_class ); 
-								echo ' wptravel_index_' . $wptravel_index;
-								if ( count( $wptravel_itineraries ) == $wptravel_index ) {
-									echo ' wptravel_index_last';
-								}
-							?>
-						">
+						<div class="tc-content clearfix <?php echo esc_attr( $wptravel_second_class );?>">
 							<?php if ( '' !== $wptravel_itinerary_title ) : ?>
 							<h3><?php echo esc_html( $wptravel_itinerary_title ); ?></h3>
 							<?php endif; ?>

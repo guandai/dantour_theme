@@ -23,7 +23,7 @@ Updated: 2024-10-21 08:14:49
 
 #trip_outline .timeline-contents .tc-content.right.wptravel_index_last {
     border: 0;
-    margin: 0 2px;
+    margin: -24px 0 0 91px;
 }
 
 .timeline-contents .tc-heading h4 {
@@ -104,6 +104,12 @@ Updated: 2024-10-21 08:14:49
     #trip_outline .timeline-contents .tc-content {
         padding: 0 0px 20px 34px;
         width: auto;
+    }
+
+    .itenary .col {
+        position: relative;
+        border-left: 2px solid;
+        margin-bottom: 0;
     }
 }
 /* ************* */
