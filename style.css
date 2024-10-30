@@ -10,13 +10,12 @@ Updated: 2024-10-21 08:14:49
 */
 
 .wptravel-layout-v2 .wptravel-archive-wrapper .view-box .view-image .offer{
- background-color: #0073e6;
+    background-color: #0073e6;
 }
 .wp-travel-related-posts.wp-travel-container-wrap h2 {
     font-size: 22px;
     text-align: center;
     margin: 40px 0;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .col.clearfix.wptravel_index_last {
@@ -48,6 +47,7 @@ h2.resp-accordion {
     font-size: 18px;
     width: initial;
     padding: 2px 20px 0 7px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .timeline-contents .tc-heading {
