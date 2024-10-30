@@ -70,9 +70,9 @@ if ( isset( $wptravel_itineraries ) && ! empty( $wptravel_itineraries ) ) : ?>
 								echo ' wptravel_index: ';
 								echo ($wptravel_index );
 								echo ' test== ';
-								echo (count( $wptravel_itineraries ) == $wptravel_index-1 );
+								echo (count( $wptravel_itineraries ) == $wptravel_index );
 								echo ' echo ';
-								if ( count( $wptravel_itineraries ) == $wptravel_index-1 ) {
+								if ( count( $wptravel_itineraries ) == $wptravel_index ) {
 									echo ' wptravel_index_last';
 								}
 							?>
