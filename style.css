@@ -9,6 +9,15 @@ Version: 1.2.1729491289
 Updated: 2024-10-21 08:14:49
 */
 
+#trip_outline .timeline-contents .tc-content{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    margin: 12px 0;
+}
+
 .timeline-contents .tc-heading h4 {
     font-size: 18px;
     width: initial;
@@ -23,7 +32,7 @@ Updated: 2024-10-21 08:14:49
 
 .itenary .timeline-contents h2 {
 	 text-align: left;
-	 margin: 12px 20px;
+	 margin: 12px 38px;
 }
 
 
