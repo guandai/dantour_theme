@@ -65,13 +65,6 @@ if ( isset( $wptravel_itineraries ) && ! empty( $wptravel_itineraries ) ) : ?>
 							<?php 
 								echo esc_attr( $wptravel_second_class ); 
 								echo ' wptravel_index_' . $wptravel_index;
-								echo ' count+1 ';
-								echo (count( $wptravel_itineraries )+1 );
-								echo ' wptravel_index: ';
-								echo ($wptravel_index );
-								echo ' test== ';
-								echo (count( $wptravel_itineraries ) == $wptravel_index );
-								echo ' echo ';
 								if ( count( $wptravel_itineraries ) == $wptravel_index ) {
 									echo ' wptravel_index_last';
 								}

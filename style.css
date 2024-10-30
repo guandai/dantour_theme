@@ -10,8 +10,8 @@ Updated: 2024-10-21 08:14:49
 */
 
 #trip_outline .timeline-contents .tc-content {
-    padding: 0 34px 20px 34px;
-    width: 840px;
+    padding: 0 0px 20px 34px;
+    width: calc(100% - 88px);
 }
 
 #trip_outline .timeline-contents .tc-content p {
@@ -33,7 +33,7 @@ Updated: 2024-10-21 08:14:49
 }
 
 .timeline-contents .tc-heading {
-    width: initial;
+    width: 88px;
     padding: 0px 0px;
 }
 
@@ -94,6 +94,18 @@ Updated: 2024-10-21 08:14:49
     background-color: #3385ff;
 }
 
+
+@media (max-width: 480px) { 
+    .timeline-contents .tc-heading {
+        width: 88px;
+        padding: 0 0 19px 20px;
+    }
+
+    #trip_outline .timeline-contents .tc-content {
+        padding: 0 0px 20px 34px;
+        width: auto;
+    }
+}
 /* ************* */
 
 
