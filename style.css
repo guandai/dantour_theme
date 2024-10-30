@@ -95,7 +95,7 @@ Updated: 2024-10-21 08:14:49
 }
 
 
-@media (max-width: 480px) { 
+@media (max-width: 767px) { 
     .timeline-contents .tc-heading {
         width: 88px;
         padding: 0 0 19px 20px;
@@ -590,7 +590,7 @@ header .wp-block-search__inside-wrapper input {
 	margin-left: 8px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 480px) {
 	.wc-blocks-pattern-header-essential .wp-block-group p {
 		font-size: 8px;
 	}
