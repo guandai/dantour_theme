@@ -9,6 +9,10 @@ Version: 1.2.1729491289
 Updated: 2024-10-21 08:14:49
 */
 
+.resp-accordion {
+    font-size: 22px;
+}
+
 #trip_outline .timeline-contents .tc-content {
     padding: 0 0px 20px 34px;
     width: calc(100% - 88px);
