@@ -9,6 +9,13 @@ Version: 1.2.1729491289
 Updated: 2024-10-21 08:14:49
 */
 
+.wp-travel-related-posts.wp-travel-container-wrap h2 {
+    font-size: 22px;
+    text-align: center;
+    margin: 40px 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
 .col.clearfix.wptravel_index_last {
     border: 2px solid transparent;
 }
