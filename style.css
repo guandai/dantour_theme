@@ -14,6 +14,13 @@ Updated: 2024-10-21 08:14:49
     width: 840px;
 }
 
+#trip_outline .timeline-contents .tc-content p {
+    margin: 8px 0;
+    box-shadow: 1px 1px 2px 2px #aaaaaaaa;
+    padding: 4px 8px;
+    border-radius: 12px;
+}
+
 #trip_outline .timeline-contents .tc-content.right.wptravel_index_last {
     border: 0;
     margin: 0 2px;
