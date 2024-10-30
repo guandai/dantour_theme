@@ -9,9 +9,6 @@ Version: 1.2.1729491289
 Updated: 2024-10-21 08:14:49
 */
 
-.timeline-contents .tc-content .image:first-of-type {
-    background-color: blue;
-}
 
 
 #trip_outline .timeline-contents .tc-content{
@@ -66,6 +63,10 @@ Updated: 2024-10-21 08:14:49
     border: 4px solid black;
     position: absolute;
     box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 32px, rgba(0, 0, 0, 0.16) 0px 4px 8px;
+}
+
+.itenary .timeline-contents .tc-content .image:first-of-type {
+    background-color: blue;
 }
 
 
