@@ -141,7 +141,10 @@ function custom_wptravel_single_excerpt( $trip_id ) {
     		$valid_start_yhz = ($date_yhz && $date_yhz->format('Y-m-d\TH:i:s.000\Z') === $start_date);
 				$valid_double_enable = $hook_for_double_enable == true;
 				$valid_enable_one = $enable_one_page == true;
-
+				error_log($valid_trip_price );
+				error_log($valid_start_yhz );
+				error_log($valid_double_enable );
+				error_log($valid_enable_on);
 				if ( $valid_trip_price && $valid_start_yhz && $valid_double_enable && $valid_enable_one ) {
 				?>
 				<div id='wp-travel-one-page-checkout-enables'><?php __('Book Now', 'wp-travel' ); ?></div>
