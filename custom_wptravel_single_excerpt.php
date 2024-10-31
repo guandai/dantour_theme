@@ -143,7 +143,6 @@ function custom_wptravel_single_excerpt( $trip_id ) {
 				$valid_enable_one = $enable_one_page == true;
 				error_log($valid_trip_price );
 				error_log($date_yhz );
-				error_log($date_yhz->format('Y-m-d\TH:i:s.000\Z') );
 				error_log($start_date);
 				error_log($valid_start_yhz );
 				error_log($valid_double_enable );
