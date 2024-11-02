@@ -1,7 +1,8 @@
 
 /* wp-travel-dashboard */
 
-#wpadminbar
+
+.wp-site-blocks .wp-travel .dashboard-tab #account,
 .wp-site-blocks .wp-travel .dashboard-tab #address,
 .wp-site-blocks .wp-travel .dashboard-tab #logout,
 .wp-site-blocks .wp-travel .dashboard-tab #dashboard {
