@@ -16,6 +16,7 @@ input#user_login{
 #registerform .user-pass1-wrap p {
 	margin: 0;
 }
+
 #registerform #pass-strength-result{
 	border-radius: 12px;
     width: fit-content;

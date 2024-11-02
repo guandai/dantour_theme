@@ -33,5 +33,6 @@ require_once 'download_core.php';
 require_once 'bookings_user.php';
 require_once 'transfer_user_data.php';
 require_once 'load_js.php';
+require_once 'load_css.php';
 require_once 'register_url.php';
 // require_once 'redirect_trace.php';
