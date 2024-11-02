@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // booking-tab-list
 // https://dantourbooking.com/wp-travel-dashboard/#payments
 					// Update the browser history
-					history.pushState(null, '', '/account/booking');
+					history.pushState(null, '', '/account/?booking=1');
 			});
 
 			return newLi;
@@ -160,7 +160,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	// Function to check the URL and activate the appropriate tab
 	function checkAndActivateTabBasedOnURL() {
-			if (window.location.pathname === '/account/booking') {
+			if (window.location.search.includes('booking=1')) {
 					// Activate the '订单' tab
 					document.querySelectorAll('.um-account-tab').forEach(anchor => {
 							anchor.style.display = 'none';

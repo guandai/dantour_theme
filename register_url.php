@@ -14,7 +14,7 @@ function redirect_account_booking() {
         // Build the redirect URL
         $redirect_url = '/account/';
         if ($query_string) {
-            $redirect_url .= '?' . $query_string;
+            $redirect_url .= '?booking=1&' . $query_string;
         }
 
         // Perform the redirect
