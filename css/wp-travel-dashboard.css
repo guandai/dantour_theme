@@ -32,3 +32,9 @@ table.order-list-table tr {
   display: flex;
   justify-content: space-between;
 }
+
+.entry-content.wp-block-post-content .wp-travel {
+  min-height: auto;
+  align-content: center;
+  max-width: 100%;
+}
