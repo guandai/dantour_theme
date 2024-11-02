@@ -118,7 +118,8 @@ div[data-id="book-detail-1"] .contact-form_select-wrapper {
 /* form css base */
 .section h2,
 .contact-form h2 {
-  margin-top: 2em;
+   margin-top: 2em;
+   font-size: 18px;
 }
 
 
