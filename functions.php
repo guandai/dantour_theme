@@ -1,6 +1,6 @@
 <?php
 include 'custom_wptravel_single_excerpt.php';
-require 'index.php';
+require 'dantour_plugin.php';
 
 // Exit if accessed directly
 if ( !defined( 'ABSPATH' ) ) exit;
