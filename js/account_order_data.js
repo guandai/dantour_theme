@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // booking-tab-list
 // https://dantourbooking.com/wp-travel-dashboard/#payments
 					// Update the browser history
-					history.pushState(null, '', '/account/bookings') {;
+					history.pushState(null, '', '/account/bookings');
 			});
 
 			return newLi;
