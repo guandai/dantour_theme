@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		// Append the iframe to the .um-account-tab-general element
 		const account_main = document.querySelector('.um-account-main');
 		account_main?.append(getBookingBeforeHtml());
-		account_main?.append((iframe));
+		account_main?.append(getBookingHtml(iframe.outerHTML));
 	};
 
 	// Define the function to load content and insert it into .um-account-tab-general
