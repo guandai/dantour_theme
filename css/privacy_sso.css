@@ -1,0 +1,57 @@
+
+/* social login css start */
+
+#pass1,
+#user_email,
+input#user_login{
+	margin: 8px 0;
+	width: 50%;
+    border-radius: 12px;
+    font-size: 16px;
+    padding: 8px;
+    border: 1px solid #888888;
+
+}
+
+#registerform .user-pass1-wrap p {
+	margin: 0;
+}
+#registerform #pass-strength-result{
+	border-radius: 12px;
+    width: fit-content;
+    padding: 4px 8px;
+    font-size: smaller;
+    margin: 8px;
+    color: white;
+}
+
+#registerform #pass-strength-result.short {
+		background-color: grey;	
+}
+
+#registerform #pass-strength-result.good {
+		background-color: blue;
+}
+
+#registerform #pass-strength-result.bad {
+		background-color: red;
+}
+
+
+#registerform #pass-strength-result.strong {
+	background-color: green;
+}
+
+#registerform #wp-submit {
+	margin: 0;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #0073e6;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    border: 2px solid transparent;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+/* social login css end */
