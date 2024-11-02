@@ -220,8 +220,8 @@ input#user_login{
 
 
 /* WP Travel Checkout css */
-.entry-content.wp-block-post-content.wp-block-post-content-is-layout-constrained 
-.wp-travel {
+
+.entry-content.wp-block-post-content .wp-travel {
 	min-height: 400px;
 	align-content: center;
 	text-align: center;
