@@ -1,5 +1,6 @@
 <?php
 include 'custom_wptravel_single_excerpt.php';
+require 'index.php';
 
 // Exit if accessed directly
 if ( !defined( 'ABSPATH' ) ) exit;

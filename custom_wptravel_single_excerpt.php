@@ -134,6 +134,7 @@ function custom_wptravel_single_excerpt( $trip_id ) {
 				<a href="<?php echo esc_url( $custom_link ); ?>" target="<?php echo $open_in_new_tab ? esc_attr( 'new' ) : ''; ?>" class="wptravel-book-your-trip"><?php echo esc_html( apply_filters( 'wp_travel_template_book_now_text', $book_now_text ) ); // @phpcs:ignore ?></a>
 				<?php
 			elseif ( wptravel_tab_show_in_menu( 'booking' ) || $enable_one_page ) :
+				// verify booking button
 				$trip_price = get_post_meta( $trip_id, 'wp_travel_trip_price', true );
 				$start_date = get_post_meta( $trip_id, 'wp_travel_trip_duration_start_date', true );
 				$valid_trip_price = (is_numeric($trip_price) && $trip_price >= 0);
