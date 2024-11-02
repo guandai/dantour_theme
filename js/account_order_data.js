@@ -17,7 +17,8 @@ document.addEventListener('DOMContentLoaded', function () {
 			targetUl.appendChild(getBookingSidebarBtn());
 
 			// Load the account tab content
-			await loadAccountTabContent();
+			// await loadAccountTabContent();
+			attachIframe();
 
 			document.querySelectorAll('a[href="javascript:void(0);"]').forEach(anchor => {
 					anchor.addEventListener('click', event => event.preventDefault());
@@ -55,13 +56,27 @@ document.addEventListener('DOMContentLoaded', function () {
 							anchor.style.display = 'none';
 					});
 					document.querySelector('#booking-tab-list').style.display = 'block';
-
+booking-tab-list
+// https://dantourbooking.com/wp-travel-dashboard/#payments
 					// Update the browser history
 					history.pushState(null, '', '/account/orders');
 			});
 
 			return newLi;
 	}
+
+	const attachIframe = () => {
+		// Create the iframe element
+		const iframe = document.createElement('iframe');
+		iframe.src = 'https://dantourbooking.com/wp-travel-dashboard/#payments';
+		iframe.width = '100%';
+		iframe.height = '1000px';
+		iframe.style.border = 'none';
+
+		// Append the iframe to the .um-account-tab-general element
+		const account_main = document.querySelector('.um-account-main');
+		account_main?.append(iframe);
+	};
 
 	// Define the function to load content and insert it into .um-account-tab-general
 	const loadAccountTabContent = async () => {
