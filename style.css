@@ -223,7 +223,7 @@ input#user_login{
 
 .entry-content.wp-block-post-content .wp-travel {
 	min-height: 400px;
-	text-align: center;
+	align-content: center;
 	max-width: 1200px;
 }
 
