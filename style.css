@@ -694,3 +694,18 @@ header .wp-block-search__inside-wrapper input {
 	width: 100%;
 }
 /* wp-admin css fix end */
+
+
+
+/* ************* */
+
+/* wp-travel-dashboard */
+
+.wp-site-blocks .wp-travel .dashboard-tab #address,
+.wp-site-blocks .wp-travel .dashboard-tab #logout,
+.wp-site-blocks .wp-travel .dashboard-tab #dashboard {
+  display: none;
+}
+
+
+/* wp-travel-dashboard end*/

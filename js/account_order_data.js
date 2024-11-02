@@ -35,10 +35,10 @@ document.addEventListener('DOMContentLoaded', function () {
 			newLi.innerHTML = `
 					<a data-tab="general" href="javascript:void(0);" class="um-account-link current">
 							<span class="um-account-icontip uimob800-show um-tip-w" original-title="订单">
-									<i class="um-faicon-user"></i>
+									<i class="um-faicon-files-o"></i>
 							</span>
 							<span class="um-account-icon uimob800-hide">
-									<i class="um-faicon-user"></i>
+									<i class="um-faicon-files-o"></i>
 							</span>
 							<span class="um-account-title uimob800-hide">订单</span>
 							<span class="um-account-arrow uimob800-hide">
