@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			// Create the new LI element with the provided structure
 			const newLi = document.createElement('li');
 			newLi.innerHTML = `
-					<a data-tab="general" href="javascript:void(0);" class="um-account-link">
+					<a data-tab="booking" href="javascript:void(0);" class="um-account-link">
 							<span class="um-account-icontip uimob800-show um-tip-w" original-title="订单">
 									<i class="um-faicon-files-o"></i>
 							</span>
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		const iframe = document.createElement('iframe');
 		iframe.src = 'https://dantourbooking.com/wp-travel-dashboard/#payments';
 		iframe.width = '100%';
-		iframe.height = '1000px';
+		iframe.height = '500px';
 		iframe.style.border = 'none';
 
 		// Append the iframe to the .um-account-tab-general element

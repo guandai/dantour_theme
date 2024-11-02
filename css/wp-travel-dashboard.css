@@ -9,5 +9,27 @@
   display: none;
 }
 
+.entry-content .wp-travel {
+  margin: 0;
+}
 
-/* wp-travel-dashboard end*/
+div[aria-controls="tab_item-0"],
+div[aria-labelledby="tab_item-0"],
+div[aria-controls="tab_item-4"],
+div[aria-labelledby="tab_item-4"],
+div[aria-controls="tab_item-5"],
+div[aria-labelledby="tab_item-5"],
+div[aria-controls="tab_item-6"],
+div[aria-labelledby="tab_item-6"] {
+  display: none;
+}
+
+table.order-list-table {
+  width: 100%;
+}
+
+table.order-list-table tr {
+  display: flex;
+  justify-content: space-between;
+}
+
