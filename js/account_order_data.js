@@ -56,10 +56,10 @@ document.addEventListener('DOMContentLoaded', function () {
 							anchor.style.display = 'none';
 					});
 					document.querySelector('#booking-tab-list').style.display = 'block';
-booking-tab-list
+// booking-tab-list
 // https://dantourbooking.com/wp-travel-dashboard/#payments
 					// Update the browser history
-					history.pushState(null, '', '/account/orders');
+					history.pushState(null, '', '/account/bookings') {;
 			});
 
 			return newLi;
@@ -76,7 +76,7 @@ booking-tab-list
 		// Append the iframe to the .um-account-tab-general element
 		const account_main = document.querySelector('.um-account-main');
 		account_main?.append(getBookingBeforeHtml());
-		account_main?.append(getBookingHtml(iframe));
+		account_main?.append(iframe);
 	};
 
 	// Define the function to load content and insert it into .um-account-tab-general
@@ -97,7 +97,7 @@ booking-tab-list
 							const content = await response.text();
 							const account_main = document.querySelector('.um-account-main');
 							account_main?.append(getBookingBeforeHtml());
-							account_main?.append(getBookingHtml(content));
+							account_main?.append(content);
 					} else {
 							console.error('Failed to load content');
 					}
@@ -106,7 +106,7 @@ booking-tab-list
 			}
 	};
 
-	function getBookingHtml(content) {
+	function content {
 			const div = document.createElement('div');
 			div.classList.add('um-account-tab', 'um-account-tab-booking');
 			div.dataset.tab = 'booking';
@@ -160,7 +160,7 @@ booking-tab-list
 
 	// Function to check the URL and activate the appropriate tab
 	function checkAndActivateTabBasedOnURL() {
-			if (window.location.pathname === '/account/orders') {
+			if (window.location.pathname === '/account/bookings') {
 					// Activate the '订单' tab
 					document.querySelectorAll('.um-account-tab').forEach(anchor => {
 							anchor.style.display = 'none';
