@@ -1,0 +1,215 @@
+
+
+/* form extend book CSS */
+/* Style the labels as tabs */
+#book-big-type ,
+#book-type {
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+    flex-wrap: nowrap;
+	margin-bottom: -1px;
+}
+
+.wpcf7-form-control-wrap {
+  display: flex;
+  gap: 4px;
+	justify-content: center;
+}
+
+#book-big-type label {
+  padding: 8px 12px;
+  background-color: #0073e6;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  border: 2px solid transparent;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+#book-big-type label:hover {
+  background-color: #005bb5;
+}
+
+#book-big-type label input[type="radio"] {
+  display: none;
+}
+
+
+#book-big-type label.active,
+#book-big-type label input.active {
+  background-color: #0e569d;
+  border-color: #0e569d; 
+}
+#book-big-type span.wpcf7-list-item {
+	margin-left: 0.7em;
+}
+
+#book-type span.wpcf7-list-item {
+	margin-left: 0.5em;
+}
+#book-type span.wpcf7-list-item input {
+	display: none;
+}
+#book-type label {
+	display: inline-block;
+    position: relative;
+    padding: 8px 8px;
+    margin-right: 5px;
+    background-color: #f0f0f0;
+	border: 1px solid #a0a0a0;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+	border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+#book-type label.active {
+	border-bottom: 0;
+}
+
+#book-type label:hover {
+    background-color: #e0e0e0;
+}
+
+/* Style for active tab when a radio is checked */
+#book-type label.active,
+#book-type label input.active {
+    background-color: #d3e9ff;
+}
+
+
+#book-type label::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background-color: transparent;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+/* Remove margin from the last tab */
+#book-type label {
+    margin-right: 0;
+}
+#book-type-tabs {
+	border: 1px solid #a0a0a0;
+	border-radius: 12px;
+	background-color: #ffffff;
+}
+
+div[data-id="book-detail-1"] .contact-form_select-wrapper {
+	padding-bottom: 0px;
+}
+
+/* form extend book CSS end */
+
+
+
+/* ************* */
+
+
+
+/* form css base */
+.section h2,
+.contact-form h2 {
+  margin-top: 2em;
+}
+
+
+.contact-form input[type='submit'] {
+    font-size: 18px;
+    margin-left: 20px;
+		margin-top: 2em;
+		padding: 10px 20px;
+		background-color: #0073e6;
+		color: white;
+		border-radius: 5px;
+		cursor: pointer;
+		display: inline-block;
+		border: 2px solid transparent;
+		transition: background-color 0.3s, border-color 0.3s;
+}
+
+.wp-block-column input,
+.contact-form .wrapper textarea,
+.contact-form .wrapper select,
+.contact-form .wrapper input {
+	width: 100%;
+    border-radius: 12px;
+    font-size: 16px;
+    padding: 8px;
+	border: 1px solid #888888;
+}
+
+
+.contact-form .wrapper input[type="radio"],
+.contact-form .wrapper input[type="checkbox"] {
+		width: fit-content;
+}
+
+.section .wrapper,
+.contact-form .wrapper {
+    flex: 1;
+  	padding: 12px;
+}
+
+.section label,
+.contact-form label {
+    margin-top: 12px;
+  	font-weight: bold;
+}
+
+
+.row-group {
+	display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+
+input[type="file" i]::-webkit-file-upload-button  {
+    font-size: 20px;
+    padding: 12px;
+    border-radius: 12px;
+    margin-right: 8px;
+}
+
+#file-plan {
+    font-size: 20px;
+}
+
+.wp-block-column {
+	padding: 1em;
+}
+
+/* Modal styles */
+.modal {
+  display: none; /* Hidden by default */
+  border: 1px solid #888888;
+  position: fixed; 
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 300px;
+  height: 150px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+}
+
+.modal-content {
+  margin-top: 20px;
+}
+
+
+/* form css base  end*/

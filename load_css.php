@@ -26,4 +26,5 @@ function insert_css_by_url_name($file_name, $path_contains) {
 insert_css_by_url_name('wp-travel-dashboard', '/wp-travel-dashboard');
 insert_css_by_url_name('itinerary', '/itinerary');
 insert_css_by_url_name('privacy_sso', '/privacy_sso');
+insert_css_by_url_name('book_', '/book_');
 insert_css_by_url_name('home', '/');
