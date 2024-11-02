@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			// Create the new LI element with the provided structure
 			const newLi = document.createElement('li');
 			newLi.innerHTML = `
-					<a data-tab="general" href="javascript:void(0);" class="um-account-link current">
+					<a data-tab="general" href="javascript:void(0);" class="um-account-link">
 							<span class="um-account-icontip uimob800-show um-tip-w" original-title="订单">
 									<i class="um-faicon-files-o"></i>
 							</span>
