@@ -59,7 +59,7 @@ function define_download_class() {
 		public static function generate_pdf($trip_id, $download_pdf = true)
 		{
 			// $trip_id = $_REQUEST['trip_id'];
-			$defaultConfig = (new Mpdf\Config\ConfigVariables())->getDefaults();
+			$defaultConfig = (new Mpdf\Config\FontVariables())->getDefaults();
 			$font_dirs     = $defaultConfig['fontDir'];
 	
 			$defaultFontConfig = (new Mpdf\Config\FontVariables())->getDefaults();
