@@ -445,7 +445,7 @@ if (!function_exists('current_time')) {
     function current_time() {}
 }
 
-if (!function_exists('create_nonce')) {
+if (!function_exists('wp_create_nonce')) {
     function wp_create_nonce() {}
 }
 
