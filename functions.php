@@ -1,6 +1,7 @@
 <?php
 include 'custom_wptravel_single_excerpt.php';
 require_once 'non_functions.php';
+require_once 'non_wp_travel_functions.php';
 
 // Exit if accessed directly
 if ( !defined( 'ABSPATH' ) ) exit;
