@@ -86,9 +86,9 @@ if (!function_exists('wp_editor')) {
     function wp_editor() {}
 }
 
-if (!function_exists('media_upload_form')) {
-    function media_upload_form() {}
-}
+// if (!function_exists('media_upload_form')) {
+//     function media_upload_form() {}
+// }
 
 if (!function_exists('wp_trim_words')) {
     function wp_trim_words() {}
