@@ -22,3 +22,11 @@
 //         exit();
 //     }
 // }
+
+//  ultimate member redirect
+add_filter( 'um_browser_url_redirect_to__filter', function( $url ) {
+	if ( empty( $url ) && isset( $_SERVER['HTTP_REFERER'] ) ) {
+		$url = esc_url( wp_unslash( $_SERVER['HTTP_REFERER'] ) );
+	}
+	return add_query_arg( 'umuid', uniqid(), $url );
+} );
