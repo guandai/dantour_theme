@@ -56,9 +56,6 @@ document.addEventListener('DOMContentLoaded', function () {
 							anchor.style.display = 'none';
 					});
 					document.querySelector('#booking-tab-list').style.display = 'block';
-// booking-tab-list
-// https://dantourbooking.com/wp-travel-dashboard/#payments
-					// Update the browser history
 					history.pushState(null, '', '/account/?booking=1');
 			});
 
@@ -79,32 +76,6 @@ document.addEventListener('DOMContentLoaded', function () {
 		account_main?.append(getBookingHtml(iframe.outerHTML));
 	};
 
-	// Define the function to load content and insert it into .um-account-tab-general
-	const loadAccountTabContent = async () => {
-			try {
-					const response = await fetch('/wp-admin/admin-ajax.php', {
-							method: 'POST',
-							headers: {
-									'Content-Type': 'application/x-www-form-urlencoded'
-							},
-							body: new URLSearchParams({
-									action: 'load_account_tab_content',
-									args: JSON.stringify({ /* Add any required args */ })
-							})
-					});
-
-					if (response.ok) {
-							const content = await response.text();
-							const account_main = document.querySelector('.um-account-main');
-							account_main?.append(getBookingBeforeHtml());
-							account_main?.append(getBookingHtml(content));
-					} else {
-							console.error('Failed to load content');
-					}
-			} catch (error) {
-					console.error('Error loading content:', error);
-			}
-	};
 
 	function getBookingHtml(content) {
 			const div = document.createElement('div');

@@ -1,3 +1,4 @@
+
 <?php
 // Exit if accessed directly
 if ( !defined( 'ABSPATH' ) ) exit;
@@ -16,7 +17,7 @@ function insert_js_by_url_name($file_name, $path_contains) {
         if (strpos($_SERVER['REQUEST_URI'], $path_contains) !== false) {
             wp_enqueue_script(
                 $file_name . '_script',
-                get_stylesheet_directory_uri() . '/js/' . $file_name . '.js',
+                wp_enqueue_script() . '/js/' . $file_name . '.js',
                 array('jquery'), '1.0', true
             );
         }
@@ -31,3 +32,4 @@ insert_js_by_url_name('form_vehicel_active', '/book_');
 insert_js_by_url_name('form_show_sent_modal', '/book_');
 insert_js_by_url_name('global_navigation', '/');
 insert_js_by_url_name('account_order_data', '/account');
+insert_js_by_url_name('itinerary_booking_btn', '/itinerary');
