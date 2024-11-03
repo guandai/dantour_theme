@@ -17,7 +17,7 @@ function insert_js_by_url_name($file_name, $path_contains) {
         if (strpos($_SERVER['REQUEST_URI'], $path_contains) !== false) {
             wp_enqueue_script(
                 $file_name . '_script',
-                wp_enqueue_script() . '/js/' . $file_name . '.js',
+                get_stylesheet_directory_uri() . '/js/' . $file_name . '.js',
                 array('jquery'), '1.0', true
             );
         }
