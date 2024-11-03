@@ -25,40 +25,40 @@ if ( defined( 'WP_TRAVEL_ITINERARY_TMP_PATH' ) ) {
 }
 
 
-if ( function_exists( 'wptravel_get_countries' ) ) {
+if ( ! function_exists( 'wptravel_get_countries' ) ) {
 	function wptravel_get_countries() {
 		return [];
 	}
 }
-if ( function_exists( 'admin_url' ) ) {
+if ( ! function_exists( 'admin_url' ) ) {
 	function admin_url() {}
 }
-if ( function_exists( 'wptravel_get_template_html' ) ) {
+if ( ! function_exists( 'wptravel_get_template_html' ) ) {
 	function wptravel_get_template_html() {}
 }
-if ( function_exists( 'wp_logout_url' ) ) {
+if ( ! function_exists( 'wp_logout_url' ) ) {
 	function wp_logout_url() {}
 }
-if ( function_exists( 'sanitize_text_field' ) ) {
+if ( ! function_exists( 'sanitize_text_field' ) ) {
 	function sanitize_text_field() {}
 }
-if ( function_exists( 'wptravel_lostpassword_url' ) ) {
+if ( ! function_exists( 'wptravel_lostpassword_url' ) ) {
 	function wptravel_lostpassword_url() {}
 }
-if ( function_exists( 'wp_verify_nonce' ) ) {
+if ( ! function_exists( 'wp_verify_nonce' ) ) {
 	function wp_verify_nonce() {}
 }
-if ( function_exists( 'wp_unslash' ) ) {
+if ( ! function_exists( 'wp_unslash' ) ) {
 	function wp_unslash() {}
 }
 
 
-if ( function_exists( 'get_the_ID' ) ) {
+if ( ! function_exists( 'get_the_ID' ) ) {
 	function get_the_ID() {
 		return 1;
 	}
 }
-if ( function_exists( 'get_user_meta' ) ) {
+if ( ! function_exists( 'get_user_meta' ) ) {
 	function get_user_meta($id , $name) {
 		 if ($name === 'wp_travel_user_bookings') {
 			return [];
@@ -66,119 +66,119 @@ if ( function_exists( 'get_user_meta' ) ) {
 	}
 }
 
-if ( function_exists( 'wptravel_sort_array_by_priority' ) ) {
+if ( ! function_exists( 'wptravel_sort_array_by_priority' ) ) {
 	function wptravel_sort_array_by_priority() {
 		return [];
 	}
 }
-if ( function_exists( 'the_custom_logo' ) ) {
+if ( ! function_exists( 'the_custom_logo' ) ) {
 	function the_custom_logo() {}
 }
-if ( function_exists( 'wp_nonce_field' ) ) {
+if ( ! function_exists( 'wp_nonce_field' ) ) {
 	function wp_nonce_field() {}
 }
-if ( function_exists( 'has_custom_logo' ) ) {
+if ( ! function_exists( 'has_custom_logo' ) ) {
 	function has_custom_logo() {}
 }
-if ( function_exists( 'wp_editor' ) ) {
+if ( ! function_exists( 'wp_editor' ) ) {
 	function wp_editor() {}
 }
-if ( function_exists( 'media_upload_form' ) ) {
+if ( ! function_exists( 'media_upload_form' ) ) {
 	function media_upload_form() {}
 }
 
-if ( function_exists( 'wp_trim_words' ) ) {
+if ( ! function_exists( 'wp_trim_words' ) ) {
 	function wp_trim_words() {}
 }
-if ( function_exists( 'wptravel_get_fixed_departure_date' ) ) {
+if ( ! function_exists( 'wptravel_get_fixed_departure_date' ) ) {
 	function wptravel_get_fixed_departure_date() {}
 }
-if ( function_exists( 'plugins_url' ) ) {
+if ( ! function_exists( 'plugins_url' ) ) {
 	function plugins_url() {}
 }
-if ( function_exists( 'wptravel_trip_quick_view' ) ) {
+if ( ! function_exists( 'wptravel_trip_quick_view' ) ) {
 	function wptravel_trip_quick_view() {}
 }
 
-if ( function_exists( 'wptravel_use_itinerary_v2_layout' ) ) {
+if ( ! function_exists( 'wptravel_use_itinerary_v2_layout' ) ) {
 	function wptravel_use_itinerary_v2_layout() {}
 }
 
-if ( function_exists( 'wptravel_get_checkout_url' ) ) {
+if ( ! function_exists( 'wptravel_get_checkout_url' ) ) {
 	function wptravel_get_checkout_url() {}
 }
-if ( function_exists( 'wptravel_get_price_per_text' ) ) {
+if ( ! function_exists( 'wptravel_get_price_per_text' ) ) {
 	function wptravel_get_price_per_text() {}
 }
-if ( function_exists( 'wptravel_get_trip_pricing_name' ) ) {
+if ( ! function_exists( 'wptravel_get_trip_pricing_name' ) ) {
 	function wptravel_get_trip_pricing_name() {}
 }
-if ( function_exists( 'wptravel_get_pricing_variation_price_per' ) ) {
+if ( ! function_exists( 'wptravel_get_pricing_variation_price_per' ) ) {
 	function wptravel_get_pricing_variation_price_per() {}
 }
-if ( function_exists( 'wptravel_get_pricing_category_by_key' ) ) {
+if ( ! function_exists( 'wptravel_get_pricing_category_by_key' ) ) {
 	function wptravel_get_pricing_category_by_key() {}
 }
-if ( function_exists( 'get_tax_rate' ) ) {
+if ( ! function_exists( 'get_tax_rate' ) ) {
 	function get_tax_rate() {}
 }
-if ( function_exists( 'wptravel_get_total_booked_pax' ) ) {
+if ( ! function_exists( 'wptravel_get_total_booked_pax' ) ) {
 	function wptravel_get_total_booked_pax() {}
 }
-if ( function_exists( 'wptravel_get_pricing_category_by_key' ) ) {
+if ( ! function_exists( 'wptravel_get_pricing_category_by_key' ) ) {
 	function wptravel_get_pricing_category_by_key() {}
 }
-if ( function_exists( 'esc_attr__' ) ) {
+if ( ! function_exists( 'esc_attr__' ) ) {
 	function esc_attr__() {
 		return '';
 	}
 }
-if ( function_exists( 'wptravel_get_faqs' ) ) {
+if ( ! function_exists( 'wptravel_get_faqs' ) ) {
 	function wptravel_get_faqs() {}
 }
-if ( function_exists( 'esc_attr_e' ) ) {
+if ( ! function_exists( 'esc_attr_e' ) ) {
 	function esc_attr_e() {
 		return '';
 	}
 }
 
-if ( function_exists( 'wptravel_get_faqs' ) ) {
+if ( ! function_exists( 'wptravel_get_faqs' ) ) {
 	function wptravel_get_faqs() {
 		return [];
 	}
 }
-if ( function_exists( 'wptravel_is_react_version_enabled' ) ) {
+if ( ! function_exists( 'wptravel_is_react_version_enabled' ) ) {
 	function wptravel_is_react_version_enabled() {}
 }
-if ( function_exists( 'wp_reset_query' ) ) {
+if ( ! function_exists( 'wp_reset_query' ) ) {
 	function wp_reset_query() {}
 }
 
-if ( function_exists( 'wptravel_get_template_part' ) ) {
+if ( ! function_exists( 'wptravel_get_template_part' ) ) {
 	function wptravel_get_template_part() {}
 }
 
-if ( function_exists( 'wp_list_pluck' ) ) {
+if ( ! function_exists( 'wp_list_pluck' ) ) {
 	function wp_list_pluck() {}
 }
 
-if ( function_exists( 'get_the_terms' ) ) {
+if ( ! function_exists( 'get_the_terms' ) ) {
 	function get_the_terms($name) {
 		if ($name === 'itinerary_types') {
 			return [];
 		}
 	}
 }
-if ( function_exists( 'wptravel_get_review_count' ) ) {
+if ( ! function_exists( 'wptravel_get_review_count' ) ) {
 	function wptravel_get_review_count() {}
 }
-if ( function_exists( 'wptravel_get_currency_symbol' ) ) {
+if ( ! function_exists( 'wptravel_get_currency_symbol' ) ) {
 	function wptravel_get_currency_symbol() {}
 }
-if ( function_exists( 'wptravel_layout_version' ) ) {
+if ( ! function_exists( 'wptravel_layout_version' ) ) {
 	function wptravel_layout_version() {}
 }
-if ( function_exists( 'wp_get_object_terms' ) ) {
+if ( ! function_exists( 'wp_get_object_terms' ) ) {
 	function wp_get_object_terms() {}
 }
 
