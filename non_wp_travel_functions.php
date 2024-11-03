@@ -135,9 +135,6 @@ if ( ! function_exists( 'wptravel_sort_array_by_priority' ) ) {
 if ( ! function_exists( 'wptravel_get_fixed_departure_date' ) ) {
 	function wptravel_get_fixed_departure_date() {}
 }
-if ( ! function_exists( 'wptravel_trip_quick_view' ) ) {
-	function wptravel_trip_quick_view() {}
-}
 
 if ( ! function_exists( 'wptravel_use_itinerary_v2_layout' ) ) {
 	function wptravel_use_itinerary_v2_layout() {}
