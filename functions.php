@@ -41,3 +41,6 @@ require_once 'register_url.php';
 
 // require_once 'non_functions.php';
 // require_once 'non_wp_travel_functions.php';
+add_filter( 'wp_travel_enable_paypal_express_js', function(){ 
+    return true; 
+} );
