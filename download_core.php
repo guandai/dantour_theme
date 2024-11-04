@@ -64,7 +64,8 @@ function define_download_class() {
 	
 			$defaultFontConfig = (new Mpdf\Config\FontVariables())->getDefaults();
 			$fontData          = $defaultFontConfig['fontdata'];
-	
+			error_log(print_r($font_dirs, true));
+			error_log(print_r(__DIR__, true));
 			$mpdf = new \Mpdf\Mpdf(
 				array(
 					'margin_top'    => 0,
