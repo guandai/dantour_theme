@@ -13,7 +13,8 @@ input#wp-travel-book-now  {
 	border-radius: 18px;
 }
 
-.wp-travel-form-field button-field {
+.wp-travel-form-field.stripe-procced-payment-btn
+.wp-travel-form-field.button-field {
 	display: flex;
 	justify-content: center;
 }
