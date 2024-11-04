@@ -39,5 +39,5 @@ require_once 'register_url.php';
 // require_once 'redirect_trace.php';
 
 
-require_once 'non_functions.php';
-require_once 'non_wp_travel_functions.php';
+// require_once 'non_functions.php';
+// require_once 'non_wp_travel_functions.php';
