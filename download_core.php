@@ -60,10 +60,11 @@ function define_download_class() {
 		{
 			// $trip_id = $_REQUEST['trip_id'];
 			$defaultConfig = (new Mpdf\Config\FontVariables())->getDefaults();
-			$font_dirs     = $defaultConfig['fontDir'];
+			$font_dirs     = [];
 	
 			$defaultFontConfig = (new Mpdf\Config\FontVariables())->getDefaults();
 			$fontData          = $defaultFontConfig['fontdata'];
+			error_log(print_r($defaultConfig, true));
 			error_log(print_r($font_dirs, true));
 			error_log(print_r(__DIR__, true));
 			$mpdf = new \Mpdf\Mpdf(
