@@ -1,5 +1,6 @@
 #wptravel-proceed-with-stripe,
-#wp_travel_book_now {
+input[name=wp_travel_book_now],
+input#wp-travel-book-now  {
 	background: #009cde;
     color: #fff;
 		min-width: 60%;
