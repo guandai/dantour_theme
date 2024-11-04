@@ -12,6 +12,8 @@ input#wp-travel-book-now  {
 	max-height: 55px;
 	border-radius: 18px;
 	border: 0;
+	text-align: center;
+	line-height: 1;
 }
 
 
