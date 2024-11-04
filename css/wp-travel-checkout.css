@@ -15,7 +15,7 @@ input#wp-travel-book-now  {
 }
 
 
-.checkout-page-wrap .payment-content .wp-travel-form-field.stripe-procced-payment-btn,
+.checkout-page-wrap .payment-content .wp-travel-form-field.stripe-procced-payment-btn, 
 .checkout-page-wrap .payment-content .wp-travel-form-field.button-field {
 	display: flex;
 	justify-content: center;
