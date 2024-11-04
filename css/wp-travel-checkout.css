@@ -23,3 +23,10 @@ input#wp-travel-book-now  {
 	display: flex;
 	justify-content: center;
 }
+
+
+.wp-block-group .entry-content.wp-block-post-content .wp-travel {
+		display: flex;
+    justify-content: center;
+    align-items: center;
+}
