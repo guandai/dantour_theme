@@ -1,18 +1,26 @@
 <?php
 // functions.php
 
-// Step 1: Unhook the existing function if it is hooked.
-add_action( 'wp', 'custom_override_cart_empty_message' );
-function custom_override_cart_empty_message() {
-    // Check if the method is hooked on a specific action (replace with actual hook if different)
-    remove_action( 'woocommerce_cart_is_empty', [ 'ClassName', 'cart_empty_message' ] );
-}
+// Check if the original class exists before extending it
+if ( class_exists( 'WP_Travel_Cart' ) ) {
 
-// Step 2: Define your new function to replace it.
-function custom_cart_empty_message() {
-    $url = get_post_type_archive_link( WP_TRAVEL_POST_TYPE );
-		echo sprintf( __( 'Your cart is empty please <a href="%s"> click here </a> to add trips.', 'wp-travel' ), esc_url( $url ) ); // @phpcs:ignore
-}
+    // Define a custom class that extends the original WP_Travel_Cart
+    class Custom_WP_Travel_Cart extends WP_Travel_Cart {
 
-// Step 3: Hook your custom function to the same action.
-add_action( 'woocommerce_cart_is_empty', 'custom_cart_empty_message' );
+        // Override the cart_empty_message method with custom functionality
+        public function cart_empty_message() {
+            $url = get_post_type_archive_link( WP_TRAVEL_POST_TYPE );
+            echo sprintf(
+                __( 'Your cart is empty please <a href="%s"> click here </a> to add trips.', 'wp-travel' ),
+                esc_url( $url )
+            );
+        }
+    }
+
+    // Replace the original instance of WP_Travel_Cart with the custom instance
+    add_action( 'plugins_loaded', 'replace_WP_Travel_Cart_instance', 10 );
+    function replace_WP_Travel_Cart_instance() {
+        global $wp_travel_cart;
+        $wp_travel_cart = new Custom_WP_Travel_Cart(); // Instantiate the custom class
+    }
+}
