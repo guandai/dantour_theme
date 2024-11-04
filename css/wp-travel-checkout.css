@@ -1,13 +1,19 @@
+#wptravel-pay-with-stripe,
 #wptravel-proceed-with-stripe,
 input[name=wp_travel_book_now],
 input#wp-travel-book-now  {
 	background: #009cde;
-    color: #fff;
-		min-width: 60%;
-    width: auto;
-    font-weight: 900;
-		height: 35px;
-		min-height: 35px;
-		max-height: 55px;
-		border-radius: 18px;
+	color: #fff;
+	min-width: 40%;
+	width: auto;
+	font-weight: 900;
+	height: 35px;
+	min-height: 35px;
+	max-height: 55px;
+	border-radius: 18px;
+}
+
+.wp-travel-form-field button-field {
+	display: flex;
+	justify-content: center;
 }
