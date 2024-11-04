@@ -16,9 +16,10 @@ if ( class_exists( 'WP_Travel_Cart' ) ) {
         add_action( 'init', 'replace_wp_travel_cart_instance', 1 );
         
     function replace_wp_travel_cart_instance() {
-            global $wt_cart;
-            // Set $wt_cart to an instance of the custom class to override methods. 
-            $wt_cart = new Custom_WP_Travel_Cart();
+            new Custom_WP_Travel_Cart();
+
+            // Set cart global variable.
+            $GLOBALS['wt_cart'] = new Custom_WP_Travel_Cart();
         }
     }
     
