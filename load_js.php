@@ -33,3 +33,4 @@ insert_js_by_url_name('form_show_sent_modal', '/book_');
 insert_js_by_url_name('global_navigation', '/');
 insert_js_by_url_name('account_order_data', '/account');
 insert_js_by_url_name('itinerary_booking_btn', '/itinerary');
+insert_js_by_url_name('itinerary_booking_btn', '/?post_type=itineraries');
