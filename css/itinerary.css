@@ -1,4 +1,8 @@
 
+.wp-travel__trip-headline .wp-travel-single-trip-add-to-cart {
+	margin: 0;
+}
+
 .wptravel-layout-v2 .wptravel-archive-wrapper .view-box .view-image .offer {
 	background-color: #0073e6;
 }

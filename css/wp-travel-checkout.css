@@ -1,0 +1,11 @@
+#wp_travel_book_now {
+	background: #009cde;
+    color: #fff;
+		min-width: 60%;
+    width: auto;
+    font-weight: 900;
+		height: 35px;
+		min-height: 35px;
+		max-height: 55px;
+		border-radius: 18px;
+}
