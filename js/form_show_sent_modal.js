@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 											setTimeout(function () {
 													modal.style.display = 'none';
-											}, 4000);
+											}, 5000);
 
 											// Disconnect the observer after 'sent' status is detected
 											observer.disconnect();
