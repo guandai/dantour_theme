@@ -18,5 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	
 		const bookInputs = document.querySelectorAll('#book-type label input');
 		setActive(bookInputs);
+		// set fitst input active
+		bookInputs[0].click();
 	}, 1000);	
 });
