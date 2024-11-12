@@ -115,6 +115,7 @@ div.book-type-tabs.show {
 div.wrapper.contact-form_select-wrapper p,
 div.wrapper.contact-form_select-wrapper {
 	padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 /* form extend book CSS end */
