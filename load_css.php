@@ -48,4 +48,4 @@ function admin_insert_css_by_url_name($file_name, $path_contains) {
     });
 }
 
-admin_insert_css_by_url_name('wp-admin-wp-travel', '/wp-admin-wp-travel');
+admin_insert_css_by_url_name('wp-admin-wp-travel', '/wp-admin/post.php');
