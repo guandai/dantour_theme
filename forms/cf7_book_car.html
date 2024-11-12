@@ -90,6 +90,7 @@
 		</div>
 
 
+
 		<div class="book-type-tabs" id="book-type-time">
 			<div class="row-group">
 				<div class="wrapper contact-form_select-wrapper">
@@ -99,6 +100,8 @@
 				<div class="wrapper contact-form_date-wrapper">
 					<label>预定日期</label> [date* book_date_start id:book_date_start class:book_date_start]
 				</div>
+			</div>
+			<div class="row-group">
 				<div class="wrapper contact-form_select-wrapper">
 					<label>开始时间</label> [select* book_time_start id:book_time_start class:book_time_start
 					include_blank "00:00" "00:30" "01:00" "01:30" "02:00" "02:30" "03:00" "03:30" "04:00"
@@ -107,8 +110,6 @@
 					"15:30" "16:00" "16:30" "17:00" "17:30" "18:00" "18:30" "19:00" "19:30" "20:00" "20:30"
 					"21:00" "21:30" "22:00" "22:30" "23:00" "23:30" ]
 				</div>
-			</div>
-			<div class="row-group">
 				<div class="wrapper contact-form_select-wrapper">
 					<label>结束时间</label> [select* book_time_end id:book_time_end class:book_time_end
 					include_blank "00:00" "00:30" "01:00" "01:30" "02:00" "02:30" "03:00" "03:30" "04:00"
@@ -118,7 +119,6 @@
 					"21:00" "21:30" "22:00" "22:30" "23:00" "23:30" ]
 				</div>
 			</div>
-			
 			<div class="wrapper contact-form_file-wrapper">
 				<label>详细行程文件</label> [file file-plan limit:50mb id:file-plan class:file-plan
 				filetypes:image/*|txt|pdf|doc|docx|ppt|pptx|text/* ]
@@ -129,23 +129,21 @@
 		</div>
 
 
+
 		<div class="book-type-tabs" id="book-type-custom">
 			<div class="row-group">
 				<div class="wrapper contact-form_select-wrapper">
 					<label>车型选择</label> [select* car_type id:car_type class:car_type include_blank "VIP 轿车"
 					"商务9座" "小型巴士" "大型巴士"]
 				</div>
-
 				<div class="wrapper contact-form_date-wrapper">
 					<label>预定日期</label> [date* book_date_start id:book_date_start class:book_date_start]
 				</div>
-
 				<div class="wrapper contact-form_select-wrapper">
 					<label>团组人数</label> [select* number_people id:number_people class:number_people
 					include_blank "1-5" "5-10" "10-40" "待告"]
 				</div>
 			</div>
-
 			<div class="day_city_group" id="day_city_group">
 				<div class="row-group day_city_group_1" id="day_city_group_1">
 					<div class="wrapper day_start contact-form_text-wrapper">
