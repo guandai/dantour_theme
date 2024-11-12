@@ -38,3 +38,8 @@ table.order-list-table tr {
   align-content: center;
   max-width: 100%;
 }
+
+
+#wp_travel_enquiries .components-panel__row>div {
+  width: 500px;
+}
