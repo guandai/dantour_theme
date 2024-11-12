@@ -2,20 +2,21 @@ document.addEventListener('DOMContentLoaded', function () {
 	setTimeout(()=> {
 		var fileInputs = document.querySelectorAll(".file-plan");
 
-		// Create a custom label button
-		var label = document.createElement("label");
-		label.innerHTML = "上传行程文件";
-		label.classList.add("custom-upload-btn");
 		
-		// Style the label as a button
-		label.style.display = "inline-block";
-		label.style.padding = "10px 20px";
-		label.style.border = "1px solid #000000";
-	 label.style.backgroundColor = "#efefef"; // Change this color if needed
-		label.style.borderRadius = "5px";
-		label.style.cursor = "pointer";
 		
 		fileInputs.forEach(fileInput => {
+			// Create a custom label button
+			const label = document.createElement("label");
+			label.innerHTML = "上传行程文件";
+			label.classList.add("custom-upload-btn");
+			
+			// Style the label as a button
+			label.style.display = "inline-block";
+			label.style.padding = "10px 20px";
+			label.style.border = "1px solid #000000";
+			label.style.backgroundColor = "#efefef"; // Change this color if needed
+			label.style.borderRadius = "5px";
+			label.style.cursor = "pointer";
 			// Hide the original file input
 			fileInput.style.display = "none";
 			
