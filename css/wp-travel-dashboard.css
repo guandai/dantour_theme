@@ -1,6 +1,7 @@
 
 /* wp-travel-dashboard */
-
+/* https://dantourbooking.com/wp-travel-dashboard/ */
+/* https://dantourbooking.com/account/?booking=1 */
 #wpadminbar,
 .wp-site-blocks .wp-travel .dashboard-tab #account,
 .wp-site-blocks .wp-travel .dashboard-tab #address,
@@ -37,9 +38,4 @@ table.order-list-table tr {
   min-height: auto;
   align-content: center;
   max-width: 100%;
-}
-
-
-#wp_travel_enquiries .components-panel__row>div {
-  width: 500px;
 }

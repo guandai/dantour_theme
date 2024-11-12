@@ -30,3 +30,22 @@ insert_css_by_url_name('privacy_sso', '/privacy_sso');
 insert_css_by_url_name('book_', '/book_');
 insert_css_by_url_name('wp-travel-checkout', '/wp-travel-checkout');
 insert_css_by_url_name('home', '/');
+
+
+
+
+function admin_insert_css_by_url_name($file_name, $path_contains) {
+    add_action('admin_enqueue_scripts', function() use ($file_name, $path_contains) {
+        if (strpos($_SERVER['REQUEST_URI'], $path_contains) !== false) {
+            wp_enqueue_style(
+                $file_name . '_style',
+                get_stylesheet_directory_uri() . '/css/' . $file_name . '.css',
+                array(), // Dependencies
+                '1.0',    // Version
+                'all'     // Media
+            );
+        }
+    });
+}
+
+admin_insert_css_by_url_name('wp-admin-wp-travel', '/wp-admin-wp-travel');
