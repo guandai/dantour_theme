@@ -108,7 +108,7 @@ div.book-type-tabs.show {
   display: none;
 }
 
-div[data-id="book-detail-1"] .contact-form_select-wrapper {
+div.wrapper.contact-form_select-wrapper {
 	padding-bottom: 0px;
 }
 
