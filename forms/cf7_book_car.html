@@ -1,0 +1,171 @@
+<div id="successModal" class="modal">
+	<div class="modal-content">
+		您的预定已经发送成功，我们会在24小时以内与您取得联系！您还可以通过预定部门邮箱与我们取得联系 booking@dantourbooking.com
+	</div>
+</div>
+
+
+<div class="contact-form">
+	<div class="contact-info">
+		<div class="row-group">
+			<div class="wrapper contact-form_select-wrapper">
+				<label>名字</label> [text* username id:username class:username]
+			</div>
+
+			<div class="wrapper contact-form_select-wrapper">
+				<label>邮件</label> [text* email id:email class:email]
+			</div>
+		</div>
+
+		<div class="row-group">
+			<div class="wrapper contact-form_select-wrapper">
+				<label>电话</label> [text* phone_number id:phone_number class:phone_number]
+			</div>
+
+			<div class="wrapper contact-form_select-wrapper">
+				<label>微信</label> [text* wechat_name id:wechat_name class:wechat_name]
+			</div>
+		</div>
+	</div>
+
+
+	<div class="form-info">
+		<div class="row-group">
+			<div class="wrapper contact-form_select-wrapper">
+				<label>预约类型</label> [radio book-type id:book-type default:1 class:book-type
+				use_label_element "单次接送" "按时包车" "定制包车游"]
+			</div>
+		</div>
+
+
+
+
+		<div class="book-type-tabs" id="book-type-single">
+			<div class="row-group">
+				<div class="wrapper contact-form_select-wrapper">
+					<label>车型选择</label> [select* car_type id:car_type class:car_type include_blank "VIP 轿车"
+					"商务9座" "小型巴士" "大型巴士"]
+				</div>
+				<div class="wrapper contact-form_date-wrapper">
+					<label>预定日期</label> [date* book_date_start id:book_date_start class:book_date_start]
+				</div>
+				<div class="wrapper contact-form_select-wrapper">
+					<label>开始时间</label> [select* book_time_start id:book_time_start class:book_time_start
+					include_blank "00:00" "00:30" "01:00" "01:30" "02:00" "02:30" "03:00" "03:30" "04:00"
+					"04:30" "05:00" "05:30" "06:00" "06:30" "07:00" "07:30" "08:00" "08:30" "09:00" "09:30"
+					"10:00" "10:30" "11:00" "11:30" "12:00" "12:30" "13:00" "13:30" "14:00" "14:30" "15:00"
+					"15:30" "16:00" "16:30" "17:00" "17:30" "18:00" "18:30" "19:00" "19:30" "20:00" "20:30"
+					"21:00" "21:30" "22:00" "22:30" "23:00" "23:30" ]
+				</div>
+			</div>
+			<div class="by-way-only" id="by-way-only">
+				<div class="row-group">
+					<div class="wrapper contact-form_text-wrapper">
+						<label>订车起点</label> [text* book_starting id:book_starting class:book_starting ]
+					</div>
+
+					<div class="wrapper contact-form_text-wrapper">
+						<label>订车终点</label> [text* book_destination id:book_destination class:book_destination ]
+					</div>
+				</div>
+
+				<div class="row-group">
+					<div class="wrapper contact-form_select-wrapper">
+						<label>是否需要入内协助退税及送机</label> [select* need_airport_drop_off id:need_airport_drop_off
+						class:need_airport_drop_off include_blank "yes" "no"]
+					</div>
+
+					<div class="wrapper contact-form_select-wrapper">
+						<label>是否需要入内举牌接机</label> [select* need_airport_pick_up id:need_airport_pick_up
+						class:need_airport_pick_up include_blank "yes" "no"]
+					</div>
+					<div class="wrapper contact-form_text-wrapper">
+						<label>航班信息</label> [text* book_flight id:book_flight class:book_flight ]
+					</div>
+				</div>
+			</div>
+			<div class="wrapper contact-form_select-wrapper plan-detail">
+				<label>备注/留言</label> [textarea user-comments id: user-comments class: user-comments 40x4]
+			</div>
+		</div>
+
+
+		<div class="book-type-tabs" id="book-type-time">
+			<div class="row-group">
+				<div class="wrapper contact-form_select-wrapper">
+					<label>车型选择</label> [select* car_type id:car_type class:car_type include_blank "VIP 轿车"
+					"商务9座" "小型巴士" "大型巴士"]
+				</div>
+				<div class="wrapper contact-form_date-wrapper">
+					<label>预定日期</label> [date* book_date_start id:book_date_start class:book_date_start]
+				</div>
+				<div class="wrapper contact-form_select-wrapper">
+					<label>开始时间</label> [select* book_time_start id:book_time_start class:book_time_start
+					include_blank "00:00" "00:30" "01:00" "01:30" "02:00" "02:30" "03:00" "03:30" "04:00"
+					"04:30" "05:00" "05:30" "06:00" "06:30" "07:00" "07:30" "08:00" "08:30" "09:00" "09:30"
+					"10:00" "10:30" "11:00" "11:30" "12:00" "12:30" "13:00" "13:30" "14:00" "14:30" "15:00"
+					"15:30" "16:00" "16:30" "17:00" "17:30" "18:00" "18:30" "19:00" "19:30" "20:00" "20:30"
+					"21:00" "21:30" "22:00" "22:30" "23:00" "23:30" ]
+				</div>
+			</div>
+			<div class="row-group">
+				<div class="wrapper contact-form_select-wrapper">
+					<label>结束时间</label> [select* book_time_end id:book_time_end class:book_time_end
+					include_blank "00:00" "00:30" "01:00" "01:30" "02:00" "02:30" "03:00" "03:30" "04:00"
+					"04:30" "05:00" "05:30" "06:00" "06:30" "07:00" "07:30" "08:00" "08:30" "09:00" "09:30"
+					"10:00" "10:30" "11:00" "11:30" "12:00" "12:30" "13:00" "13:30" "14:00" "14:30" "15:00"
+					"15:30" "16:00" "16:30" "17:00" "17:30" "18:00" "18:30" "19:00" "19:30" "20:00" "20:30"
+					"21:00" "21:30" "22:00" "22:30" "23:00" "23:30" ]
+				</div>
+			</div>
+			
+			<div class="wrapper contact-form_file-wrapper">
+				<label>详细行程文件</label> [file file-plan limit:50mb id:file-plan class:file-plan
+				filetypes:image/*|txt|pdf|doc|docx|ppt|pptx|text/* ]
+			</div>
+			<div class="wrapper contact-form_select-wrapper plan-detail">
+				<label>备注/留言</label> [textarea user-comments id: user-comments class: user-comments 40x4]
+			</div>
+		</div>
+
+
+		<div class="book-type-tabs" id="book-type-custom">
+			<div class="row-group">
+				<div class="wrapper contact-form_select-wrapper">
+					<label>车型选择</label> [select* car_type id:car_type class:car_type include_blank "VIP 轿车"
+					"商务9座" "小型巴士" "大型巴士"]
+				</div>
+
+				<div class="wrapper contact-form_date-wrapper">
+					<label>预定日期</label> [date* book_date_start id:book_date_start class:book_date_start]
+				</div>
+
+				<div class="wrapper contact-form_select-wrapper">
+					<label>团组人数</label> [select* number_people id:number_people class:number_people
+					include_blank "1-5" "5-10" "10-40" "待告"]
+				</div>
+			</div>
+
+			<div class="day_city_group" id="day_city_group">
+				<div class="row-group day_city_group_1" id="day_city_group_1">
+					<div class="wrapper day_start contact-form_text-wrapper">
+						<label for="day_city_start_1">第1天 起点城市</label> [text* day_city_start_1
+						id:day_city_start_1 class:day_city_start_1 ]
+					</div>
+					<div class="wrapper day_end contact-form_text-wrapper">
+						<label for="day_city_end_1">第1天 终点城市</label> [text* day_city_end_1 id:day_city_end_1
+						class:day_city_end_1 ]
+					</div>
+				</div>
+			</div>
+
+			<div class="wrapper contact-form_file-wrapper">
+				<label>详细行程文件</label> [file file-plan limit:50mb id:file-plan class:file-plan
+				filetypes:image/*|txt|pdf|doc|docx|ppt|pptx|text/* ]
+			</div>
+			<div class="wrapper contact-form_select-wrapper plan-detail">
+				<label>备注/留言</label> [textarea user-comments id: user-comments class: user-comments 40x4]
+			</div>
+		</div>
+	</div>
+</div>
