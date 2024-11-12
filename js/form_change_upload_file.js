@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		label.style.borderRadius = "5px";
 		label.style.cursor = "pointer";
 		
-		fileInputs.forEach(input => {
+		fileInputs.forEach(fileInput => {
 			// Hide the original file input
 			fileInput.style.display = "none";
 			
