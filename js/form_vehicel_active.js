@@ -8,6 +8,13 @@ document.addEventListener('DOMContentLoaded', function () {
 				});
 				b.parentElement.classList.add('active');
 				b.classList.add('active');
+
+				document.querySelectorAll('.book-type-tabs').forEach(x => {
+					x.classList.remove('show');
+					if (b.value === x.dataset.type) {
+						x.classList.add('show');
+					}
+				})
 			});
 		});
 	}

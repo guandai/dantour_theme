@@ -1,4 +1,7 @@
 
+.show {
+  display: block;
+}
 
 /* form extend book CSS */
 /* Style the labels as tabs */
@@ -7,7 +10,7 @@
 	margin: 0;
 	display: flex;
 	flex-direction: row;
-    flex-wrap: nowrap;
+  flex-wrap: nowrap;
 	margin-bottom: -1px;
 }
 
@@ -102,6 +105,11 @@
 	border-radius: 12px;
 	background-color: #ffffff;
   padding-bottom: 12px;
+  display: none;
+}
+
+.book-type-tabs  {
+  display: none;
 }
 
 div[data-id="book-detail-1"] .contact-form_select-wrapper {
@@ -142,11 +150,11 @@ div[data-id="book-detail-1"] .contact-form_select-wrapper {
 .contact-form .wrapper textarea,
 .contact-form .wrapper select,
 .contact-form .wrapper input {
-	width: 100%;
+    width: 100%;
     border-radius: 12px;
     font-size: 16px;
     padding: 8px;
-	border: 1px solid #888888;
+    border: 1px solid #888888;
 }
 
 
@@ -208,6 +216,5 @@ input[type="file" i]::-webkit-file-upload-button  {
   padding: 20px;
   font-size: 16px;
 }
-
 
 /* form css base  end*/
