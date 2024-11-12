@@ -101,6 +101,7 @@
 	border: 1px solid #a0a0a0;
 	border-radius: 12px;
 	background-color: #ffffff;
+  padding-bottom: 12px;
 }
 
 div[data-id="book-detail-1"] .contact-form_select-wrapper {
