@@ -13,10 +13,10 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 	
 	setTimeout(() => {
-		const bigTypeInputs = document.querySelectorAll('#book-big-type label input');
-		setActive(bigTypeInputs);
+		// const bigTypeInputs = document.querySelectorAll('#book-big-type label input');
+		// setActive(bigTypeInputs);
 	
-		const bigInputs = document.querySelectorAll('#book-type label input');
-		setActive(bigInputs);
+		const bookInputs = document.querySelectorAll('#book-type label input');
+		setActive(bookInputs);
 	}, 1000);	
 });
