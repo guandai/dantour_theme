@@ -1,3 +1,7 @@
 #wp_travel_enquiries .components-panel__row>div {
   width: 75%;
 }
+
+#wp_travel_enquiries .components-base-control.css-qy3gpb.ej5x27r4 {
+  width: 100%;
+}
