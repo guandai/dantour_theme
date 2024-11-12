@@ -104,7 +104,6 @@ div.book-type-tabs.show {
 	border: 1px solid #a0a0a0;
 	border-radius: 12px;
 	background-color: #ffffff;
-  
   padding-bottom: 12px;
   display: none;
 }
@@ -113,6 +112,7 @@ div.book-type-tabs.show {
   margin-bottom: 100px;
 }
 
+div.wrapper.contact-form_select-wrapper p,
 div.wrapper.contact-form_select-wrapper {
 	padding-bottom: 0px;
 }
