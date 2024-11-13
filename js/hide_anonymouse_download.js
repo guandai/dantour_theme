@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			loginBtn.innerText = "登录";
 
 			loginBtn.addEventListener('click', () => {
-				location.href = "/login";
+				location.href = "/login?redirect_to=" + location.href;
 			});
 			loginDiv.appendChild(loginBtn);
 			const sliderTab = document.querySelector('#slider-tab');
