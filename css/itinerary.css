@@ -147,7 +147,7 @@ width: 300px;
 }
 
 
-.btn-center-login {
+.btn-center-login.login-div {
 	position: absolute;
 	top: 50%;
 	left: 50%;

@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			// add a button  at center for login to /login page
 			let loginBtn = document.createElement('button');
 			let loginDiv = document.createElement('div');
-			loginDiv.className = "login-div";
+			loginDiv.className = "btn-center-login login-div";
 			loginBtn.innerText = "登录";
 			loginBtn.style.position = "absolute";
 
