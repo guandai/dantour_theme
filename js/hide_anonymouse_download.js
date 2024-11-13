@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
 			let loginDiv = document.createElement('div');
 			loginDiv.className = "btn-center-login login-div";
 			loginBtn.innerText = "登录";
-			loginBtn.style.position = "absolute";
 
 			loginBtn.addEventListener('click', () => {
 				location.href = "/login";
