@@ -148,11 +148,10 @@ width: 300px;
 
 .btn-center-login.login-div {
 	display: flex;
+	justify-content: center;
 }
 
 .btn-center-login.login-div button {
-	top: 50%;
-	left: 50%;
 	border: none;
 	background-color: #007bff;
 	cursor: pointer;
