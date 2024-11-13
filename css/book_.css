@@ -3,6 +3,15 @@
   justify-content: center;
 }
 
+.wpcf7-checkbox.guide_style,
+.wpcf7-checkbox.guide_knowledge,
+.wpcf7-checkbox.guide_language,
+.wpcf7-checkbox.guide_extra {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+
 .wpcf7-form-control.wpcf7-radio.car_type {
   display: flex;
 }
