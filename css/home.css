@@ -55,7 +55,7 @@
     background-color: rgb(155, 155, 155, 0.3);
 }
 
-:root :where(.is-layout-flow) > * {
+:root .scroll-parallax:where(.is-layout-flow) > * {
     margin-block-start: 0;
     margin-block-end: 0;
 }
