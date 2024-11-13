@@ -62,16 +62,12 @@
 		<div class="row-group">
 			<div class="wrapper contact-form_select-wrapper">
 				<label>团组人数</label>
-				[select
-				book_date_time_start id:book_date_time_start class:book_date_time_start include_blank
-				"1-40+" "待告"
-				]
+				[number* number_people id:number_people class:number_people min:1 "1"]
 			</div>
 
 			<div class="wrapper contact-form_select-wrapper">
 				<label>境外天数</label>
-				[select*
-				out_days id:out_days class:out_days include_blank
+				[select* out_days id:out_days class:out_days
 				"1天" "2天" "3天" "4天" "5天" "6天" "7天" "8天" "9天" "10天" "11天" "12天" "13天" "14天" "15天" "16天" "17天" "18天" "19天" "20天"
 				"20天+"
 				]
