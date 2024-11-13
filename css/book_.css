@@ -1,3 +1,7 @@
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
 
 .wpcf7-form-control.wpcf7-radio.car_type {
   display: flex;
