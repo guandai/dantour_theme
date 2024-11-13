@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
 				location.href = "/login";
 			});
 			const sliderTab = document.querySelector('#slider-tab');
-			sliderTab.insertAdjacentElement('afterend', newElement);
+			sliderTab.insertAdjacentElement('afterend', loginBtn);
 		}
 	}, 1000);
 });
