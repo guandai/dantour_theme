@@ -55,6 +55,11 @@
     background-color: rgb(155, 155, 155, 0.3);
 }
 
+:root :where(.is-layout-flow) > * {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
 @media (max-width: 480px) {
     .mobile_narrow .wp-block-column.icon_column {
         flex-basis: 40% !important;
