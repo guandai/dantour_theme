@@ -34,4 +34,3 @@ insert_js_by_url_name('global_navigation', '/');
 insert_js_by_url_name('account_order_data', '/account');
 insert_js_by_url_name('itinerary_booking_btn', '/itinerary');
 insert_js_by_url_name('hide_anonymouse_download', '/itinerary');
-
