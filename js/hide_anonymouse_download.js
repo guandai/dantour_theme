@@ -2,8 +2,6 @@ document.addEventListener('DOMContentLoaded', function() {
 	setTimeout(() => {
 		// detect wpUserData exist or not,   if  exist remove  #downloads  element
 		let downloads = document.getElementById('downloads');
-		let travelMap = document.querySelector('.wp-travel-map');
-
 		if ( window.wpUserData === undefined ) {
 			downloads.remove();
 		} else {	
@@ -16,9 +14,8 @@ document.addEventListener('DOMContentLoaded', function() {
 			loginBtn.addEventListener('click', () => {
 				location.href = "/login";
 			});
-			
-			travelMap.parentNode.insertBefore(loginBtn, travelMap);
+			const sliderTab = document.querySelector('#slider-tab');
+			sliderTab.insertAdjacentElement('afterend', newElement);
 		}
 	}, 1000);
 });
-
