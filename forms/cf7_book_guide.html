@@ -1,0 +1,190 @@
+<div id="successModal" class="modal">
+	<div class="modal-content">
+		您的预定已经发送成功，我们会在24小时以内与您取得联系！您还可以通过预定部门邮箱与我们取得联系 booking@dantourbooking.com
+	</div>
+</div>
+
+<div class="contact-form">
+	<div class="contact-info">
+		
+		<div class="row-group">
+			<div class="wrapper contact-form_select-wrapper">
+				<label>名字</label>
+				[text* username id:username class:username]
+			</div>
+
+			<div class="wrapper contact-form_select-wrapper">
+				<label>邮件</label>
+				[text* email id:email class:email]
+			</div>
+		</div>
+
+		<div class="row-group">
+			<div class="wrapper contact-form_select-wrapper">
+				<label>电话</label>
+				[text* phone_number id:phone_number class:phone_number]
+			</div>
+
+			<div class="wrapper contact-form_select-wrapper">
+				<label>微信</label>
+				[text wechat_name id:wechat_name class:wechat_name]
+			</div>
+		</div>
+	</div>
+
+  <h2>导游需求</h2>
+	<div class="form-info">
+		
+		<div class="row-group">
+			<div class="wrapper contact-form_date-wrapper">
+				<label>服务开始时间 （YYYY-MM-DD）（必填）</label>
+				[date* service_start_time id:service_start_time class:service_start_time]
+			</div>
+
+			<div class="wrapper contact-form_date-wrapper">
+				<label>服务结束时间 （YYYY-MM-DD）（必填）</label>
+				[date* service_end_time id:service_end_time class:service_end_time]
+			</div>
+		</div>
+
+		<div class="row-group">
+			<div class="wrapper contact-form_text-wrapper">
+				<label>起始城市（必填）</label>
+				[text* book_starting id:book_starting class:book_starting ]
+			</div>
+
+			<div class="wrapper contact-form_text-wrapper">
+				<label>结束城市（必填）</label>
+				[text* book_destination id:book_destination class:book_destination ]
+			</div>
+		</div>
+
+		<div class="row-group">
+			<div class="wrapper contact-form_select-wrapper">
+				<label>团组人数</label>
+				[select
+				book_date_time_start id:book_date_time_start class:book_date_time_start include_blank
+				"1-40+" "待告"
+				]
+			</div>
+
+			<div class="wrapper contact-form_select-wrapper">
+				<label>境外天数</label>
+				[select*
+				out_days id:out_days class:out_days include_blank
+				"1天" "2天" "3天" "4天" "5天" "6天" "7天" "8天" "9天" "10天" "11天" "12天" "13天" "14天" "15天" "16天" "17天" "18天" "19天" "20天"
+				"20天+"
+				]
+			</div>
+		</div>
+
+		<div class="row-group">
+			<div class="wrapper contact-form_select-wrapper">
+				<label>服务类型</label>
+				[select
+				service_type id:service_type class:service_type include_blank
+				"地陪导游" "双语导游" "导游兼翻译" "导游兼团控" "导游兼摄影"
+				]
+			</div>
+
+			<div class="wrapper contact-form_select-wrapper">
+				<label>服务地点</label>
+				[select
+				service_location id:service_location class:service_location include_blank
+				"丹麦" "瑞典" "挪威" "芬兰" "冰岛"
+				]
+			</div>
+
+			<div class="wrapper contact-form_select-wrapper">
+				<label>行程概述</label>
+				[select
+				type_overview id:type_overview class:type_overview include_blank
+				"一地团" "长线团"
+				]
+			</div>
+		</div>
+
+		<div class="day_city_group" id="day_city_group">
+			<div class="row-group day_city_group_1" id="day_city_group_1">
+				<div class="wrapper day_start contact-form_text-wrapper">
+					<label for="day_city_start_1">第1天 起点城市</label>
+					[text* day_city_start_1 id:day_city_start_1 class:day_city_start_1 ]
+				</div>
+
+				<div class="wrapper day_end contact-form_text-wrapper">
+					<label for="day_city_end_1">第1天 终点城市</label>
+					[text* day_city_end_1 id:day_city_end_1 class:day_city_end_1 ]
+				</div>
+			</div>
+		</div>
+
+		<div class="wrapper contact-form_select-wrapper">
+			<label>备注/留言</label>
+			[textarea book_plan id:user-comments class:book_plan 40x4]
+		</div>
+
+		<div class="wrapper contact-form_file-wrapper">
+			<label>详细行程文件</label>
+			[file file-plan limit:50mb id:file-plan class:file-plan]
+		</div>
+
+		<hr />
+		<h2>导游要求</h2>
+
+
+		<div class="row-group">
+			<div class="wrapper contact-form_select-wrapper">
+				<label>导游经验</label>
+				[select*
+				guide_experience id:guide_experience class:guide_experience include_blank
+				"不限" "3年内" "3-5年" "5-10年" "10-15年" "15年以上"
+				]
+			</div>
+
+			<div class="wrapper contact-form_select-wrapper">
+				<label>导游性别</label>
+				[select
+				guide_gender id:guide_gender class:guide_gender include_blank
+				"男性" "女性" "不限"
+				]
+			</div>
+		</div>
+
+		<div class="row-group">
+			<div class="wrapper contact-form_select-wrapper">
+				<label>语言水平（复选框）</label>
+				[checkbox
+				guide_language id:guide_language class:guide_language use_label_element
+				"普通话" "粤语" "英文" "丹麦语" "瑞典语" "挪威语" "芬兰语" "冰岛语" "其他"
+				]
+			</div>
+
+			<div class="wrapper contact-form_select-wrapper">
+				<label>擅长讲解（复选框）</label>
+				[checkbox
+				guide_knowledge id:guide_knowledge class:guide_knowledge use_label_element
+				"历史文化" "自然景观" "北欧生活" "教育研学" "常规博物馆" "生活日常" "小众景点" "设计建筑" "户外探险" "摄影摄像" "其他"
+				]
+			</div>
+		</div>
+
+		<div class="row-group">
+			<div class="wrapper contact-form_select-wrapper">
+				<label>服务风格（复选框）</label>
+				[checkbox
+				guide_style id:guide_style class:guide_style use_label_element
+				"耐心细致" "风趣幽默" "灵活应变" "专业严谨" "热情友好" "组织有序" "其他"
+				]
+			</div>
+
+			<div class="wrapper contact-form_select-wrapper">
+				<label>其他要求（复选框）</label>
+				[checkbox
+				guide_extra id:guide_extra class:guide_extra use_label_element
+				"可兼任司兼导" "能兼任翻译" "可兼任摄像" "可兼任团控"
+				]
+			</div>
+		</div>
+	</div>
+        [submit "发送预约"]
+</div>
