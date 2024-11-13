@@ -145,3 +145,24 @@ width: 300px;
 			margin: 35px 0 0 -2px;
 	}
 }
+
+
+.btn-center-login {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: none;
+	background-color: #007bff;
+	cursor: pointer;
+	font-weight: bold;
+
+	background: #dadada;
+	padding: 10px 20px;
+	font-size: 18px;
+	border-radius: 3px;
+	text-decoration: none;
+	color: #545454;
+	transition: .3s ease-in-out linear;
+}
+
