@@ -1,4 +1,11 @@
 
+span#car_type {
+  display: flex;
+}
+.car-type-box {
+  text-align: center;
+}
+
 div.book-type-tabs.show {
   display: block;
 }

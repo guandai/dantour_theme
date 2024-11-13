@@ -41,7 +41,7 @@
 		<div class="book-type-tabs show" id="book-type-single" data-type="单次接送">
 			<div class="row-group">
 				<div class="wrapper contact-form_select-wrapper">
-					<label>车型选择</label> [radio* car_type id:car_type class:car_type include_blank "VIP轿车"
+					<label>车型选择</label> [radio car_type id:car_type class:car_type use_label_element "VIP轿车"
 					"商务9座" "小型巴士" "大型巴士"]
 				</div>
 			</div>
@@ -94,7 +94,7 @@
 		<div class="book-type-tabs" id="book-type-time" data-type="按时包车">
 			<div class="row-group">
 				<div class="wrapper contact-form_select-wrapper">
-					<label>车型选择</label> [select* car_type id:car_type class:car_type include_blank "VIP 轿车"
+					<label>车型选择</label> [radio car_type id:car_type class:car_type use_label_element "VIP轿车"
 					"商务9座" "小型巴士" "大型巴士"]
 				</div>
 			</div>
@@ -129,14 +129,14 @@
 				<label>备注/留言</label> [textarea user-comments id: user-comments class: user-comments 40x4]
 			</div>
 		</div>
-
-
-
+		<!-- https://dantourbooking.com/wp-content/uploads/2024/10/BMW-5series.png
+		https://dantourbooking.com/wp-content/uploads/2024/11/New-Project.png
+		https://dantourbooking.com/wp-content/uploads/2024/09/sprinter-2016.png
+		https://dantourbooking.com/wp-content/uploads/2024/09/duesseldorf-vip-bus-freigestellt-1536x792-1.png -->
 		<div class="book-type-tabs" id="book-type-custom" data-type="定制包车游">
 			<div class="row-group">
 				<div class="wrapper contact-form_select-wrapper">
-					<label>车型选择</label> [select* car_type id:car_type class:car_type include_blank "VIP 轿车"
-					"商务9座" "小型巴士" "大型巴士"]
+					<label>车型选择</label> [radio car_type id:car_type class:car_type use_label_element "VIP轿车" "商务9座" "小型巴士" "大型巴士"]
 				</div>
 			</div>
 			<div class="row-group">

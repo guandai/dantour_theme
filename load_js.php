@@ -28,6 +28,7 @@ insert_js_by_url_name('form_change_upload_file', '/book_');
 insert_js_by_url_name('form_load_wpuserdata', '/book_');
 insert_js_by_url_name('form_add_repeater', '/book_');
 insert_js_by_url_name('form_vehicel_active', '/book_');
+insert_js_by_url_name('form_vehicel_car_pic', '/book_');
 
 insert_js_by_url_name('form_show_sent_modal', '/book_');
 insert_js_by_url_name('global_navigation', '/');
