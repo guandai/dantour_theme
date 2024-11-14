@@ -30,6 +30,7 @@ insert_css_by_url_name('privacy_sso', '/privacy_sso');
 insert_css_by_url_name('book_', '/book_');
 insert_css_by_url_name('wp-travel-checkout', '/wp-travel-checkout');
 insert_css_by_url_name('home', '/');
+insert_css_by_url_name('shop', '/product');
 
 
 
