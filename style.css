@@ -101,10 +101,9 @@ header .wp-block-search__inside-wrapper input {
     animation-delay: 0.5s;
     position: absolute;
     top: 30%;
-    left: 24%;
     white-space: nowrap;
     color: #fff;
-    width: 65%;
+    width: 100%;
     text-wrap: wrap;
     text-align: left;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);

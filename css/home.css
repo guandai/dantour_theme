@@ -102,6 +102,16 @@
     min-height: 700px;
 }
 
-.entry-content.wp-block-post-content.has-global-padding.is-layout-constrained.wp-container-core-post-content-is-layout-1.wp-block-post-content-is-layout-constrained {
+.mailpoet-manage-subscription {
     text-align: center;
 }
+
+.mailpoet-manage-subscription input {
+    font-size: 16px;
+    padding: 8px;
+    border: 1px solid #888888;
+    padding: 12px;
+    border-radius: 12px;
+    margin-right: 8px; 
+}
+
