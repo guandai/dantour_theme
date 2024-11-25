@@ -59,7 +59,7 @@
     margin-block-end: 0;
 }
 
-.wp-block-evb-background .backgroundContentWrapper {
+.scroll-parallax.wp-block-evb-background .backgroundContentWrapper {
     display: block;
 }
 
